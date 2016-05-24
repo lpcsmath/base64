@@ -1,13 +1,13 @@
-New log file opened at Tue May 24 19:28:34 CEST 2016 by 21157@Lothars-MBP.fritz.box
-Taking next connection to: 63874
-New client attempting to connect on port: 63876-63874
-  Address = /192.168.178.30:63874
-This client on port 63876 has uuid 2cafbcad-6d31-4c36-8294-6cd85989bf8c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-2cafbcad-6d31-4c36-8294-6cd85989bf8c
-Taking next connection to: 63874
-New client attempting to connect on port: 63877-63874
-  Address = /192.168.178.30:63874
-Handshake exception on socket: 63877
+New log file opened at Tue May 24 19:35:41 CEST 2016 by 21225@Lothars-MBP.fritz.box
+Taking next connection to: 63917
+New client attempting to connect on port: 63918-63917
+  Address = /192.168.178.30:63917
+This client on port 63918 has uuid 11a10f44-d8b6-460b-9545-134dd0c2446b configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-11a10f44-d8b6-460b-9545-134dd0c2446b
+Taking next connection to: 63917
+New client attempting to connect on port: 63919-63917
+  Address = /192.168.178.30:63917
+Handshake exception on socket: 63919
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,9 +17,21 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 63874
-New client attempting to connect on port: 63878-63874
-  Address = /192.168.178.30:63874
-This client on port 63878 has uuid 0b9da60b-bc59-4f33-a49a-c6a0b2b9c40a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-2cafbcad-6d31-4c36-8294-6cd85989bf8c, activator-0b9da60b-bc59-4f33-a49a-c6a0b2b9c40a
-Taking next connection to: 63874
+Taking next connection to: 63917
+New client attempting to connect on port: 63920-63917
+  Address = /192.168.178.30:63917
+This client on port 63920 has uuid d3f0937a-d310-4aa7-93cc-af38a062ea9d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-11a10f44-d8b6-460b-9545-134dd0c2446b, activator-d3f0937a-d310-4aa7-93cc-af38a062ea9d
+Taking next connection to: 63917
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 63917
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 63917
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 63917
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 63917
