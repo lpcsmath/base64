@@ -1,12 +1,12 @@
-New log file opened at Tue May 24 12:15:48 CEST 2016 by 18053@Lothars-MacBook-Pro.fritz.box
-jvm 18053@Lothars-MacBook-Pro.fritz.box
+New log file opened at Tue May 24 19:28:34 CEST 2016 by 21157@Lothars-MBP.fritz.box
+jvm 21157@Lothars-MBP.fritz.box
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
-Command engine arguments=List()
 Waiting for sbt command engine
+Command engine arguments=List()
 Command engine baseDirectory=/Users/lpfeiler/develop/github/base64
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/lpfeiler/develop/github/base64/project, returning: (base64-build)
 Loading project definition from /Users/lpfeiler/develop/github/base64/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4f4871a0, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2cb9599d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -66,7 +66,7 @@ Set current project to base64 (in build file:/Users/lpfeiler/develop/github/base
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@54c494f1, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@428e8dc, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -83,12 +83,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 24.05.2016 12:15:55
+Total time: 1 s, completed 24.05.2016 19:28:43
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@317b2e67, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@696d9e81, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -105,12 +105,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 24.05.2016 12:15:56
+Total time: 1 s, completed 24.05.2016 19:28:44
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@2aae1a98, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@2fd2c4fd, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -127,12 +127,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 24.05.2016 12:15:57
+Total time: 1 s, completed 24.05.2016 19:28:45
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@41ddcac4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6428b116, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -155,107 +155,17 @@ Copy resource mappings:
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@6625f81))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@42a2d880))
-Running TaskDef(HelloSpec, org.scalatest.tools.Framework$$anon$1@6625f81, false, [SuiteSelector])
-Read from stdout: HelloSpec:
-Read from stdout: Hello
-Read from stdout: - should have tests
-[32mHelloSpec:[0m
-[32mHello[0m
-[32m- should have tests[0m
-Read from stdout: Run completed in 528 milliseconds.
-Read from stdout: Total number of tests run: 1
-Read from stdout: Suites: completed 1, aborted 0
-Read from stdout: Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-Read from stdout: All tests passed.
-Run completed in 528 milliseconds.
-Total number of tests run: 1
-Suites: completed 1, aborted 0
-Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-All tests passed.
-Passed tests:
-	HelloSpec
-Total time: 2 s, completed 24.05.2016 12:15:59
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1fbdc1a5, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed 24.05.2016 12:16:53
-> server-post-command-cleanup
-> server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@59d9b4d5, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
 
 Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
 Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes...
@@ -266,60 +176,88 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 663a33ac, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 2efaad10, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
 	/Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes:/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scalatest/scalatest_2.11/2.2.4/bundles/scalatest_2.11.jar:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scala-lang/scala-reflect/2.11.2/jars/scala-reflect.jar:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar
-Scala compilation took 5.468444633 s
-Invalidating /Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
-The /Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala source file has the following implicit definitions changed:
-	convertToStringMustWrapper, convertToStringCanWrapper, convertToAnyShouldWrapper, convertNumericToPlusOrMinusWrapper, convertToEqualizer, convertToInAndIgnoreMethodsAfterTaggedAs, shorthandSharedTestRegistrationFunction, convertToRegexWrapper, unconstrainedEquality, convertToInAndIgnoreMethods, convertToStringShouldWrapper, convertSymbolToHavePropertyMatcherGenerator, shorthandTestRegistrationFunction.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@678dcfd2))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@17f6116d))
-Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@678dcfd2, false, [SuiteSelector])
-Read from stdout: Base64Spec:
-Read from stdout: Base64
-Read from stdout: - should encode to base64
-[32mBase64Spec:[0m
-[32mBase64[0m
-[32m- should encode to base64[0m
-Read from stdout: Run completed in 220 milliseconds.
-Read from stdout: Total number of tests run: 1
-Read from stdout: Suites: completed 1, aborted 0
-Read from stdout: Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-Read from stdout: All tests passed.
-Run completed in 220 milliseconds.
-Total number of tests run: 1
-Suites: completed 1, aborted 0
-Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-All tests passed.
-Passed tests:
-	Base64Spec
-Total time: 6 s, completed 24.05.2016 12:16:59
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:5: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:5: not found: value encode
+Read from stdout: encode("", "") should === ("")
+      encode("", "") should === ("")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:6: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:6: not found: value encode
+Read from stdout: encode("f", "") should === ("Zg==")
+      encode("f", "") should === ("Zg==")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:7: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:7: not found: value encode
+Read from stdout: encode("fo", "") should === ("Zm8=")
+      encode("fo", "") should === ("Zm8=")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:8: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:8: not found: value encode
+Read from stdout: encode("foo", "") should === ("Zm9v")
+      encode("foo", "") should === ("Zm9v")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:9: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:9: not found: value encode
+Read from stdout: encode("foob", "") should === ("Zm9vYg==")
+      encode("foob", "") should === ("Zm9vYg==")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:10: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:10: not found: value encode
+Read from stdout: encode("fooba", "") should === ("Zm9vYmE=")
+      encode("fooba", "") should === ("Zm9vYmE=")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:11: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:11: not found: value encode
+Read from stdout: encode("foobar", "") should === ("Zm9vYmFy")
+      encode("foobar", "") should === ("Zm9vYmFy")
+Read from stdout: ^
+      ^
+Read from stdout: 7 errors found
+7 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (test:compileIncremental) Compilation failed
+(test:compileIncremental) Compilation failed
+Total time: 4 s, completed 24.05.2016 19:28:49
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@3e484c72, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 24.05.2016 19:28:50
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@40c34e9e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1cb1c00e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -336,12 +274,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 0 s, completed 24.05.2016 12:17:05
+Total time: 0 s, completed 24.05.2016 19:29:26
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@36ffcdc4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@75016119, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -362,21 +300,21 @@ Copy resource mappings:
 	
 
 Initial source changes: 
-	removed:Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
-	added: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
-	modified: Set()
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala, /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala, /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
 
-Recompiling all 1 sources: invalidated sources (2) exceeded 50.0% of all sources
+Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
 Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes...
 Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes...
 Getting compiler-interface from component compiler for Scala 2.11.7
@@ -385,67 +323,66 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 533f1182, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 4705ec63, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
 	/Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes:/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scalatest/scalatest_2.11/2.2.4/bundles/scalatest_2.11.jar:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scala-lang/scala-reflect/2.11.2/jars/scala-reflect.jar:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar
-Scala compilation took 1.934650369 s
-Invalidating /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
-The /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala source file has the following implicit definitions changed:
-	convertToStringMustWrapper, convertToStringCanWrapper, convertToAnyShouldWrapper, convertNumericToPlusOrMinusWrapper, convertToEqualizer, convertToInAndIgnoreMethodsAfterTaggedAs, shorthandSharedTestRegistrationFunction, convertToRegexWrapper, unconstrainedEquality, convertToInAndIgnoreMethods, convertToStringShouldWrapper, convertSymbolToHavePropertyMatcherGenerator, shorthandTestRegistrationFunction.
-All member reference dependencies will be considered within this context.
-Invalidating /Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala)
-The /Users/lpfeiler/develop/github/base64/src/test/scala/HelloSpec.scala source file has the following implicit definitions changed:
-	convertToStringMustWrapper, convertToStringCanWrapper, convertToAnyShouldWrapper, convertNumericToPlusOrMinusWrapper, convertToEqualizer, convertToInAndIgnoreMethodsAfterTaggedAs, shorthandSharedTestRegistrationFunction, convertToRegexWrapper, unconstrainedEquality, convertToInAndIgnoreMethods, convertToStringShouldWrapper, convertSymbolToHavePropertyMatcherGenerator, shorthandTestRegistrationFunction.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs2.runner.Specs2Framework' not present.
-Framework implementation 'org.specs2.runner.SpecsFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@6519b7f))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@5b6cfa38))
-Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@6519b7f, false, [SuiteSelector])
-Read from stdout: Base64Spec:
-Read from stdout: Base64
-Read from stdout: - should encode to base64
-[32mBase64Spec:[0m
-[32mBase64[0m
-[32m- should encode to base64[0m
-Read from stdout: Run completed in 181 milliseconds.
-Read from stdout: Total number of tests run: 1
-Read from stdout: Suites: completed 1, aborted 0
-Read from stdout: Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-Read from stdout: All tests passed.
-Run completed in 181 milliseconds.
-Total number of tests run: 1
-Suites: completed 1, aborted 0
-Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-All tests passed.
-Passed tests:
-	Base64Spec
-Total time: 3 s, completed 24.05.2016 12:17:08
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:5: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:5: not found: value encode
+Read from stdout: encode("", "") should === ("")
+      encode("", "") should === ("")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:6: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:6: not found: value encode
+Read from stdout: encode("f", "") should === ("Zg==")
+      encode("f", "") should === ("Zg==")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:7: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:7: not found: value encode
+Read from stdout: encode("fo", "") should === ("Zm8=")
+      encode("fo", "") should === ("Zm8=")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:8: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:8: not found: value encode
+Read from stdout: encode("foo", "") should === ("Zm9v")
+      encode("foo", "") should === ("Zm9v")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:9: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:9: not found: value encode
+Read from stdout: encode("foob", "") should === ("Zm9vYg==")
+      encode("foob", "") should === ("Zm9vYg==")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:10: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:10: not found: value encode
+Read from stdout: encode("fooba", "") should === ("Zm9vYmE=")
+      encode("fooba", "") should === ("Zm9vYmE=")
+Read from stdout: ^
+      ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:11: not found: value encode
+/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala:11: not found: value encode
+Read from stdout: encode("foobar", "") should === ("Zm9vYmFy")
+      encode("foobar", "") should === ("Zm9vYmFy")
+Read from stdout: ^
+      ^
+Read from stdout: 7 errors found
+7 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (test:compileIncremental) Compilation failed
+(test:compileIncremental) Compilation failed
+Total time: 1 s, completed 24.05.2016 19:29:27
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@fd4f765, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@31b0867d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -462,9 +399,96 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 0 s, completed 24.05.2016 12:17:08
+Total time: 0 s, completed 24.05.2016 19:29:51
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@1deea7a9, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7abec293, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/test/scala/Base64Spec.scala)
+
+Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 4a22a90e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/test-classes:/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scalatest/scalatest_2.11/2.2.4/bundles/scalatest_2.11.jar:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scala-lang/scala-reflect/2.11.2/jars/scala-reflect.jar:/Users/lpfeiler/develop/scala/activator-dist-1.3.6/repository/org.scala-lang.modules/scala-xml_2.11/1.0.2/bundles/scala-xml_2.11.jar
+Scala compilation took 3.562749498 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@10d94490))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@5a9c8ddc))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@10d94490, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to base64
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to base64[0m
+Read from stdout: Run completed in 454 milliseconds.
+Read from stdout: Total number of tests run: 1
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+Read from stdout: All tests passed.
+Run completed in 454 milliseconds.
+Total number of tests run: 1
+Suites: completed 1, aborted 0
+Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
+Passed tests:
+	Base64Spec
+Total time: 5 s, completed 24.05.2016 19:29:55
+> server-post-command-cleanup
+> server-handle-next-server-request

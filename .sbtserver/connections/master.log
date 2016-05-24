@@ -1,13 +1,13 @@
-New log file opened at Tue May 24 12:15:48 CEST 2016 by 18053@Lothars-MacBook-Pro.fritz.box
-Taking next connection to: 59267
-New client attempting to connect on port: 59268-59267
-  Address = /192.168.178.30:59267
-This client on port 59268 has uuid 80407392-36d8-4780-a25f-3921cfc543f0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-80407392-36d8-4780-a25f-3921cfc543f0
-Taking next connection to: 59267
-New client attempting to connect on port: 59269-59267
-  Address = /192.168.178.30:59267
-Handshake exception on socket: 59269
+New log file opened at Tue May 24 19:28:34 CEST 2016 by 21157@Lothars-MBP.fritz.box
+Taking next connection to: 63874
+New client attempting to connect on port: 63876-63874
+  Address = /192.168.178.30:63874
+This client on port 63876 has uuid 2cafbcad-6d31-4c36-8294-6cd85989bf8c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2cafbcad-6d31-4c36-8294-6cd85989bf8c
+Taking next connection to: 63874
+New client attempting to connect on port: 63877-63874
+  Address = /192.168.178.30:63874
+Handshake exception on socket: 63877
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,9 +17,9 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 59267
-New client attempting to connect on port: 59271-59267
-  Address = /192.168.178.30:59267
-This client on port 59271 has uuid f8347fa6-a48d-4d84-8c29-553e162396f1 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-80407392-36d8-4780-a25f-3921cfc543f0, activator-f8347fa6-a48d-4d84-8c29-553e162396f1
-Taking next connection to: 59267
+Taking next connection to: 63874
+New client attempting to connect on port: 63878-63874
+  Address = /192.168.178.30:63874
+This client on port 63878 has uuid 0b9da60b-bc59-4f33-a49a-c6a0b2b9c40a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2cafbcad-6d31-4c36-8294-6cd85989bf8c, activator-0b9da60b-bc59-4f33-a49a-c6a0b2b9c40a
+Taking next connection to: 63874
