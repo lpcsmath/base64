@@ -1,0 +1,32 @@
+New log file opened at Tue May 24 12:00:15 CEST 2016 by 17893@Lothars-MacBook-Pro.fritz.box
+Taking next connection to: 58792
+New client attempting to connect on port: 58793-58792
+  Address = /192.168.178.30:58792
+This client on port 58793 has uuid 32758596-5668-4d6b-b597-fac3df6bcbd0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-32758596-5668-4d6b-b597-fac3df6bcbd0
+Taking next connection to: 58792
+New client attempting to connect on port: 58794-58792
+  Address = /192.168.178.30:58792
+Handshake exception on socket: 58794
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58792
+New client attempting to connect on port: 58795-58792
+  Address = /192.168.178.30:58792
+This client on port 58795 has uuid 90df443c-a078-4001-9f47-19e5c217939d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-32758596-5668-4d6b-b597-fac3df6bcbd0, activator-90df443c-a078-4001-9f47-19e5c217939d
+Taking next connection to: 58792
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58792
