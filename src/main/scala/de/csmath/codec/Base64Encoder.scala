@@ -40,11 +40,9 @@ object Base64Encoder {
             else
                 builder appendAll encodeTriple(t,needPads,padsNeeded,chars)
         }
-        if (enc == BASE64URL) padsNeeded match {
-            case 2 => builder replace (builder.length - 2, builder.length, "%3D%3D")
-            case 1 => builder replace (builder.length - 1, builder.length, "%3D")
-            case _ =>
-        }
+        if (enc == BASE64URL)
+            builder replace (builder.length - padsNeeded, builder.length, "%3D"*padsNeeded)
+
         builder.toString
     }
 
@@ -62,13 +60,10 @@ object Base64Encoder {
                    else (((ib & 15) << 2) ^ (ic >> 6)).toByte
         val u = if (fill > 0) pad
                    else (ic & 63).toByte
-        if (needPad)
-            Array(chars(r),chars(s),chars(t),chars(u))
-        else fill match {
-            case 2 => Array(chars(r),chars(s))
-            case 1 => Array(chars(r),chars(s),chars(t))
-            case 0 => Array(chars(r),chars(s),chars(t),chars(u))
-        }
+        val res = Array(chars(r),chars(s),chars(t),chars(u))
+        if (needPad || fill == 0)
+            res
+            else res take (4-fill)
     }
 
     /**
