@@ -5,7 +5,7 @@ import Codec._
 
 object Base64Encoder {
 
-    private val fill: Byte = 0
+    private val fill = 0
     private val pad: Byte = 64
 
     private val canChars = Vector() ++ ((65 to 90) map (_.toChar)) ++
@@ -30,7 +30,7 @@ object Base64Encoder {
                                      urlChars
                                      else canChars
 
-        val triples = data grouped 3 map (_.toArray) map (a2t)
+        val triples = data grouped 3 map (_.toArray) map (b2i)
 
         val builder = StringBuilder.newBuilder
 
@@ -49,17 +49,15 @@ object Base64Encoder {
     /**
      * encodeTriple: ((Byte,Byte,Byte),Boolean,Int) => Array[Char]
      */
-    def encodeTriple(x: (Byte,Byte,Byte), needPad: Boolean, fill: Int, chars:Vector[Char]) = {
-        val (a,b,c) = x
-        val ia: Int = if (a < 0) 256 + a else a
-        val ib: Int = if (b < 0) 256 + b else b
-        val ic: Int = if (c < 0) 256 + c else c
-        val r = (ia >> 2).toByte
-        val s = (((ia & 3) << 4) ^ (ib >> 4)).toByte
+    def encodeTriple(x: Array[Int], needPad: Boolean, fill: Int, chars:Vector[Char]) = {
+        require(x.length == 3)
+        val Array(a,b,c) = x
+        val r = (a >> 2).toByte
+        val s = (((a & 3) << 4) ^ (b >> 4)).toByte
         val t = if (fill == 2) pad
-                   else (((ib & 15) << 2) ^ (ic >> 6)).toByte
+                   else (((b & 15) << 2) ^ (c >> 6)).toByte
         val u = if (fill > 0) pad
-                   else (ic & 63).toByte
+                   else (c & 63).toByte
         val res = Array(chars(r),chars(s),chars(t),chars(u))
         if (needPad || fill == 0)
             res
@@ -67,12 +65,12 @@ object Base64Encoder {
     }
 
     /**
-     * l2t: (Array[Byte]) => Tuple3[Array]
+     * l2t: (Array[Byte]) => Array[Int]
      */
-    private val a2t = (a: Array[Byte]) => a.length match {
-       case 1 => (a(0), fill, fill)
-       case 2 => (a(0), a(1), fill)
-       case 3 => (a(0), a(1), a(2))
+    private val b2i = (a: Array[Byte]) => {
+       var ai = for (i <- a) yield if (i < 0) 256 + i else i.toInt
+       while (ai.length < 3) ai = ai :+ fill
+       ai
     }
 
     /**
