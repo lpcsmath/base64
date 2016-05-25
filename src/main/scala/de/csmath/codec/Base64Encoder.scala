@@ -6,7 +6,7 @@ import Codec._
 object Base64Encoder {
 
     private val fill = 0
-    private val pad: Byte = 64
+    private val pad = 64
 
     private val canChars = Vector() ++ ((65 to 90) map (_.toChar)) ++
                                     ((97 to 122) map (_.toChar)) ++
@@ -35,10 +35,8 @@ object Base64Encoder {
         val builder = StringBuilder.newBuilder
 
         for (t <- triples) {
-            if (triples.hasNext)
-                builder appendAll encodeTriple(t,needPads,0,chars)
-            else
-                builder appendAll encodeTriple(t,needPads,padsNeeded,chars)
+            val filled = if (triples.hasNext) 0 else padsNeeded
+            builder appendAll encodeTriple(t,needPads,filled,chars)
         }
         if (enc == BASE64URL)
             builder replace (builder.length - padsNeeded, builder.length, "%3D"*padsNeeded)
@@ -52,14 +50,14 @@ object Base64Encoder {
     def encodeTriple(x: Array[Int], needPad: Boolean, fill: Int, chars:Vector[Char]) = {
         require(x.length == 3)
         val Array(a,b,c) = x
-        val r = (a >> 2).toByte
-        val s = (((a & 3) << 4) ^ (b >> 4)).toByte
+        val r = (a >> 2)
+        val s = (((a & 3) << 4) ^ (b >> 4))
         val t = if (fill == 2) pad
-                   else (((b & 15) << 2) ^ (c >> 6)).toByte
+                   else (((b & 15) << 2) ^ (c >> 6))
         val u = if (fill > 0) pad
-                   else (c & 63).toByte
+                   else (c & 63)
         val res = Array(chars(r),chars(s),chars(t),chars(u))
-        if (needPad || fill == 0)
+        if (fill == 0 || needPad)
             res
             else res take (4-fill)
     }
