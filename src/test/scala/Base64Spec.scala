@@ -18,12 +18,12 @@ class Base64Spec extends FlatSpec with Matchers {
 
   "Base64" should "encode to BASE64URL" in {
       encode("", BASE64URL) should === ("")
-      encode("f", BASE64URL) should === ("Zg%3B%3B")
-      encode("fo", BASE64URL) should === ("Zm8%3B")
+      encode("f", BASE64URL) should === ("Zg%3D%3D")
+      encode("fo", BASE64URL) should === ("Zm8%3D")
       encode("foo", BASE64URL) should === ("Zm9v")
-      encode("foob", BASE64URL) should === ("Zm9vYg%3B%3B")
-      encode("fooba", BASE64URL) should === ("Zm9vYmE%3B")
-      encode(List[Byte](-1,-17), BASE64URL) should === ("_-8%3B")
+      encode("foob", BASE64URL) should === ("Zm9vYg%3D%3D")
+      encode("fooba", BASE64URL) should === ("Zm9vYmE%3D")
+      encode(List[Byte](-1,-17), BASE64URL) should === ("_-8%3D")
   }
 
   "Base64" should "encode to BASE64NOPAD" in {

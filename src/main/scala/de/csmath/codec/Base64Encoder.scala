@@ -41,9 +41,9 @@ object Base64Encoder {
                 builder appendAll encodeTriple(t,needPads,padsNeeded,chars)
         }
         if (enc == BASE64URL) padsNeeded match {
-            case 2 => builder replace (builder.length - 2, builder.length, "%3B%3B")
-            case 1 => builder replace (builder.length - 1, builder.length, "%3B")
-            case _ =>  
+            case 2 => builder replace (builder.length - 2, builder.length, "%3D%3D")
+            case 1 => builder replace (builder.length - 1, builder.length, "%3D")
+            case _ =>
         }
         builder.toString
     }
