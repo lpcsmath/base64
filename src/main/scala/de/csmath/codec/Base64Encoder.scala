@@ -47,7 +47,7 @@ object Base64Encoder {
     }
 
     /**
-     * encodeTriple: ((Byte,Byte,Byte),Boolean,Int) => Array[Char]
+     * encodeTriple: (Array[Int],Boolean,Int) => Array[Char]
      */
     def encodeTriple(x: Array[Int], needPad: Boolean, fill: Int, chars:Vector[Char]) = {
         require(x.length == 3)
@@ -65,7 +65,7 @@ object Base64Encoder {
     }
 
     /**
-     * l2t: (Array[Byte]) => Array[Int]
+     * b2i: (Array[Byte]) => Array[Int]
      */
     private val b2i = (a: Array[Byte]) => {
        var ai = for (i <- a) yield if (i < 0) 256 + i else i.toInt
