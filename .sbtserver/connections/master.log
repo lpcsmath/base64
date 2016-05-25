@@ -1,13 +1,13 @@
-New log file opened at Wed May 25 20:54:50 CEST 2016 by 2861@Lothars-MacBook-Pro.fritz.box
-Taking next connection to: 60394
-New client attempting to connect on port: 60395-60394
-  Address = /192.168.178.30:60394
-This client on port 60395 has uuid 6b5b9603-f3e2-468a-9cd7-1efed39cd324 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-6b5b9603-f3e2-468a-9cd7-1efed39cd324
-Taking next connection to: 60394
-New client attempting to connect on port: 60396-60394
-  Address = /192.168.178.30:60394
-Handshake exception on socket: 60396
+New log file opened at Wed May 25 21:09:39 CEST 2016 by 2947@Lothars-MacBook-Pro.fritz.box
+Taking next connection to: 60559
+New client attempting to connect on port: 60560-60559
+  Address = /192.168.178.30:60559
+This client on port 60560 has uuid b2795ede-6976-4d74-8d9c-42d2b0362715 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b2795ede-6976-4d74-8d9c-42d2b0362715
+Taking next connection to: 60559
+New client attempting to connect on port: 60561-60559
+  Address = /192.168.178.30:60559
+Handshake exception on socket: 60561
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,15 +17,30 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 60394
-New client attempting to connect on port: 60397-60394
-  Address = /192.168.178.30:60394
-This client on port 60397 has uuid 1816bac0-cc8a-4070-a4bd-7efb5420220c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-6b5b9603-f3e2-468a-9cd7-1efed39cd324, activator-1816bac0-cc8a-4070-a4bd-7efb5420220c
-Taking next connection to: 60394
+Taking next connection to: 60559
+New client attempting to connect on port: 60562-60559
+  Address = /192.168.178.30:60559
+This client on port 60562 has uuid 082ff452-60d5-44e2-815c-c8ad25201be2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b2795ede-6976-4d74-8d9c-42d2b0362715, activator-082ff452-60d5-44e2-815c-c8ad25201be2
+Taking next connection to: 60559
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 60394
+Taking next connection to: 60559
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 60394
+Taking next connection to: 60559
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60559
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60559
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60559
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60559
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60559

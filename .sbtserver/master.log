@@ -1,5 +1,5 @@
-New log file opened at Wed May 25 20:54:50 CEST 2016 by 2861@Lothars-MacBook-Pro.fritz.box
-jvm 2861@Lothars-MacBook-Pro.fritz.box
+New log file opened at Wed May 25 21:09:39 CEST 2016 by 2947@Lothars-MacBook-Pro.fritz.box
+jvm 2947@Lothars-MacBook-Pro.fritz.box
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/lpfeiler/develop/github/base64/project, returning: (base64-build)
 Loading project definition from /Users/lpfeiler/develop/github/base64/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6d798f92, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@57c0d195, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -66,7 +66,7 @@ Set current project to base64 (in build file:/Users/lpfeiler/develop/github/base
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@d933111, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ee0729, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -91,69 +91,231 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler f48cec8, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 5af0d27c, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
 	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Scala compilation took 5.061014652 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 6 s, completed 25.05.2016 20:55:01
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: too many arguments for method encodeTriple: (x: Array[Int], needPad: Boolean, chars: Vector[Char])Array[Char]
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: too many arguments for method encodeTriple: (x: Array[Int], needPad: Boolean, chars: Vector[Char])Array[Char]
+Read from stdout: builder appendAll encodeTriple(t,needPads,filled,chars)
+            builder appendAll encodeTriple(t,needPads,filled,chars)
+Read from stdout: ^
+                                          ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 4 s, completed 25.05.2016 21:09:48
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@1e477155, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@566ef018, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
 
-Total time: 1 s, completed 25.05.2016 20:55:01
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 4c525ba7, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: too many arguments for method encodeTriple: (x: Array[Int], needPad: Boolean, chars: Vector[Char])Array[Char]
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: too many arguments for method encodeTriple: (x: Array[Int], needPad: Boolean, chars: Vector[Char])Array[Char]
+Read from stdout: builder appendAll encodeTriple(t,needPads,filled,chars)
+            builder appendAll encodeTriple(t,needPads,filled,chars)
+Read from stdout: ^
+                                          ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 25.05.2016 21:09:50
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@4acb21a2, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@ffa2e3c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
 
-Total time: 1 s, completed 25.05.2016 20:55:02
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 44e09d1a, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: too many arguments for method encodeTriple: (x: Array[Int], needPad: Boolean, chars: Vector[Char])Array[Char]
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: too many arguments for method encodeTriple: (x: Array[Int], needPad: Boolean, chars: Vector[Char])Array[Char]
+Read from stdout: builder appendAll encodeTriple(t,needPads,filled,chars)
+            builder appendAll encodeTriple(t,needPads,filled,chars)
+Read from stdout: ^
+                                          ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 25.05.2016 21:09:51
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@18181095, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 4bb0cf42, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: not found: value padsNeeded
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: not found: value padsNeeded
+Read from stdout: builder replace (builder.length - padsNeeded, builder.length, "%3D"*padsNeeded)
+            builder replace (builder.length - padsNeeded, builder.length, "%3D"*padsNeeded)
+Read from stdout: ^
+                                              ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: not found: value padsNeeded
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:39: not found: value padsNeeded
+Read from stdout: builder replace (builder.length - padsNeeded, builder.length, "%3D"*padsNeeded)
+            builder replace (builder.length - padsNeeded, builder.length, "%3D"*padsNeeded)
+Read from stdout: ^
+                                                                                ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 25.05.2016 21:10:23
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@32461f6b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 16453915, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 2.401343905 s
+Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala...
+Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala...
+Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala source file has the following regular definitions changed:
+	encodeTriple.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed 25.05.2016 21:12:16
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@6ef9beb8, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@27fbf30b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -195,45 +357,146 @@ Framework implementation 'org.specs2.runner.Specs2Framework' not present.
 Framework implementation 'org.specs2.runner.SpecsFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@18fcb095))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@6db63e90))
-Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@18fcb095, false, [SuiteSelector])
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@1413e02b))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@237ddf08))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@1413e02b, false, [SuiteSelector])
 Read from stdout: Base64Spec:
 Read from stdout: Base64
-Read from stdout: - should encode to BASE64
+Read from stdout: - should encode to BASE64 *** FAILED ***
+Read from stdout: java.lang.IllegalArgumentException: requirement failed
+Read from stdout: at scala.Predef$.require(Predef.scala:207)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)
+Read from stdout: at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+Read from stdout: at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)
+Read from stdout: at de.csmath.codec.Base64$.encode(Base64.scala:14)
+Read from stdout: at Base64Spec$$anonfun$1.apply$mcV$sp(Base64Spec.scala:10)
+Read from stdout: ...
 Read from stdout: Base64
-Read from stdout: - should encode to BASE64URL
+Read from stdout: - should encode to BASE64URL *** FAILED ***
+Read from stdout: java.lang.IllegalArgumentException: requirement failed
+Read from stdout: at scala.Predef$.require(Predef.scala:207)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)
+Read from stdout: at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+Read from stdout: at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)
+Read from stdout: at de.csmath.codec.Base64$.encode(Base64.scala:14)
+Read from stdout: at Base64Spec$$anonfun$2.apply$mcV$sp(Base64Spec.scala:21)
+Read from stdout: ...
 Read from stdout: Base64
-Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: - should encode to BASE64NOPAD *** FAILED ***
+Read from stdout: java.lang.IllegalArgumentException: requirement failed
+Read from stdout: at scala.Predef$.require(Predef.scala:207)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)
+Read from stdout: at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+Read from stdout: at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)
+Read from stdout: at de.csmath.codec.Base64$.encode(Base64.scala:14)
+Read from stdout: at Base64Spec$$anonfun$3.apply$mcV$sp(Base64Spec.scala:31)
+Read from stdout: ...
 Read from stdout: Base64
-Read from stdout: - should encode to BASE64URLNOPAD
+Read from stdout: - should encode to BASE64URLNOPAD *** FAILED ***
+Read from stdout: java.lang.IllegalArgumentException: requirement failed
+Read from stdout: at scala.Predef$.require(Predef.scala:207)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)
+Read from stdout: at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)
+Read from stdout: at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+Read from stdout: at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)
+Read from stdout: at de.csmath.codec.Base64$.encode(Base64.scala:14)
+Read from stdout: at Base64Spec$$anonfun$4.apply$mcV$sp(Base64Spec.scala:41)
+Read from stdout: ...
 [32mBase64Spec:[0m
 [32mBase64[0m
-[32m- should encode to BASE64[0m
+[31m- should encode to BASE64 *** FAILED ***[0m
+[31m  java.lang.IllegalArgumentException: requirement failed[0m
+[31m  at scala.Predef$.require(Predef.scala:207)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)[0m
+[31m  at scala.collection.Iterator$class.foreach(Iterator.scala:742)[0m
+[31m  at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)[0m
+[31m  at de.csmath.codec.Base64$.encode(Base64.scala:14)[0m
+[31m  at Base64Spec$$anonfun$1.apply$mcV$sp(Base64Spec.scala:10)[0m
+[31m  ...[0m
 [32mBase64[0m
-[32m- should encode to BASE64URL[0m
+[31m- should encode to BASE64URL *** FAILED ***[0m
+[31m  java.lang.IllegalArgumentException: requirement failed[0m
+[31m  at scala.Predef$.require(Predef.scala:207)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)[0m
+[31m  at scala.collection.Iterator$class.foreach(Iterator.scala:742)[0m
+[31m  at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)[0m
+[31m  at de.csmath.codec.Base64$.encode(Base64.scala:14)[0m
+[31m  at Base64Spec$$anonfun$2.apply$mcV$sp(Base64Spec.scala:21)[0m
+[31m  ...[0m
 [32mBase64[0m
-[32m- should encode to BASE64NOPAD[0m
+[31m- should encode to BASE64NOPAD *** FAILED ***[0m
+[31m  java.lang.IllegalArgumentException: requirement failed[0m
+[31m  at scala.Predef$.require(Predef.scala:207)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)[0m
+[31m  at scala.collection.Iterator$class.foreach(Iterator.scala:742)[0m
+[31m  at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)[0m
+[31m  at de.csmath.codec.Base64$.encode(Base64.scala:14)[0m
+[31m  at Base64Spec$$anonfun$3.apply$mcV$sp(Base64Spec.scala:31)[0m
+[31m  ...[0m
 [32mBase64[0m
-[32m- should encode to BASE64URLNOPAD[0m
-Read from stdout: Run completed in 729 milliseconds.
+[31m- should encode to BASE64URLNOPAD *** FAILED ***[0m
+[31m  java.lang.IllegalArgumentException: requirement failed[0m
+[31m  at scala.Predef$.require(Predef.scala:207)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encodeTriple(Base64Encoder.scala:50)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:38)[0m
+[31m  at de.csmath.codec.Base64Encoder$$anonfun$encode$1.apply(Base64Encoder.scala:37)[0m
+[31m  at scala.collection.Iterator$class.foreach(Iterator.scala:742)[0m
+[31m  at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:37)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:76)[0m
+[31m  at de.csmath.codec.Base64$.encode(Base64.scala:14)[0m
+[31m  at Base64Spec$$anonfun$4.apply$mcV$sp(Base64Spec.scala:41)[0m
+[31m  ...[0m
+Read from stdout: Run completed in 628 milliseconds.
 Read from stdout: Total number of tests run: 4
 Read from stdout: Suites: completed 1, aborted 0
-Read from stdout: Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
-Read from stdout: All tests passed.
-Run completed in 729 milliseconds.
+Read from stdout: Tests: succeeded 0, failed 4, canceled 0, ignored 0, pending 0
+Read from stdout: *** 4 TESTS FAILED ***
+Run completed in 628 milliseconds.
 Total number of tests run: 4
 Suites: completed 1, aborted 0
-Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
-All tests passed.
-Passed tests:
+Tests: succeeded 0, failed 4, canceled 0, ignored 0, pending 0
+*** 4 TESTS FAILED ***
+Read from stdout: Failed tests:
+Failed tests:
+Read from stdout: 	Base64Spec
 	Base64Spec
-Total time: 2 s, completed 25.05.2016 20:55:05
+Read from stdout: (test:test) sbt.TestsFailedException: Tests unsuccessful
+(test:test) sbt.TestsFailedException: Tests unsuccessful
+Total time: 1 s, completed 25.05.2016 21:12:18
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@7eeb8853, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@20e89fce, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -250,12 +513,34 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 0 s, completed 25.05.2016 20:55:05
+Total time: 0 s, completed 25.05.2016 21:12:18
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@119624f6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 25.05.2016 21:12:18
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@32a3f7a5, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@53b449db, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -280,25 +565,25 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 30d4432f, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 44442c51, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
 	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Scala compilation took 1.41103501 s
+Scala compilation took 1.323625395 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 25.05.2016 20:57:36
+Total time: 2 s, completed 25.05.2016 21:12:51
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@47b038c9, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@291cf8e5, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -340,9 +625,9 @@ Framework implementation 'org.specs2.runner.Specs2Framework' not present.
 Framework implementation 'org.specs2.runner.SpecsFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@23c877f8))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@67743663))
-Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@23c877f8, false, [SuiteSelector])
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@117cb260))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@f483818))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@117cb260, false, [SuiteSelector])
 Read from stdout: Base64Spec:
 Read from stdout: Base64
 Read from stdout: - should encode to BASE64
@@ -361,24 +646,24 @@ Read from stdout: - should encode to BASE64URLNOPAD
 [32m- should encode to BASE64NOPAD[0m
 [32mBase64[0m
 [32m- should encode to BASE64URLNOPAD[0m
-Read from stdout: Run completed in 212 milliseconds.
+Read from stdout: Run completed in 261 milliseconds.
 Read from stdout: Total number of tests run: 4
 Read from stdout: Suites: completed 1, aborted 0
 Read from stdout: Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
 Read from stdout: All tests passed.
-Run completed in 212 milliseconds.
+Run completed in 261 milliseconds.
 Total number of tests run: 4
 Suites: completed 1, aborted 0
 Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
 All tests passed.
 Passed tests:
 	Base64Spec
-Total time: 1 s, completed 25.05.2016 20:57:37
+Total time: 1 s, completed 25.05.2016 21:12:52
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@b8ac228, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4984dcbc, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -403,25 +688,25 @@ Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 4cd3b1fc, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 362b1ded, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
 	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Scala compilation took 1.186805957 s
+Scala compilation took 0.924721584 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed 25.05.2016 21:00:52
+Total time: 1 s, completed 25.05.2016 21:16:17
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@70d47cf1, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1353ca1b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -463,9 +748,9 @@ Framework implementation 'org.specs2.runner.Specs2Framework' not present.
 Framework implementation 'org.specs2.runner.SpecsFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@1344d9d1))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@37157cc2))
-Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@1344d9d1, false, [SuiteSelector])
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@5cf764b1))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@3c20d7bf))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@5cf764b1, false, [SuiteSelector])
 Read from stdout: Base64Spec:
 Read from stdout: Base64
 Read from stdout: - should encode to BASE64
@@ -484,18 +769,1258 @@ Read from stdout: - should encode to BASE64URLNOPAD
 [32m- should encode to BASE64NOPAD[0m
 [32mBase64[0m
 [32m- should encode to BASE64URLNOPAD[0m
-Read from stdout: Run completed in 174 milliseconds.
+Read from stdout: Run completed in 216 milliseconds.
 Read from stdout: Total number of tests run: 4
 Read from stdout: Suites: completed 1, aborted 0
 Read from stdout: Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
 Read from stdout: All tests passed.
-Run completed in 174 milliseconds.
+Run completed in 216 milliseconds.
 Total number of tests run: 4
 Suites: completed 1, aborted 0
 Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
 All tests passed.
 Passed tests:
 	Base64Spec
-Total time: 1 s, completed 25.05.2016 21:00:53
+Total time: 1 s, completed 25.05.2016 21:16:18
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@a89b123, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 2e4b80e8, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 0.937552534 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.05.2016 21:16:26
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@78e23995, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@4fa24e29))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@6e82a34f))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@4fa24e29, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URL *** FAILED ***
+Read from stdout: "Zm%3D%3D" did not equal "Zm8%3D" (Base64Spec.scala:22)
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URLNOPAD
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to BASE64[0m
+[32mBase64[0m
+[31m- should encode to BASE64URL *** FAILED ***[0m
+[31m  "Zm%3D%3D" did not equal "Zm8%3D" (Base64Spec.scala:22)[0m
+[32mBase64[0m
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+Read from stdout: Run completed in 227 milliseconds.
+Read from stdout: Total number of tests run: 4
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 3, failed 1, canceled 0, ignored 0, pending 0
+Read from stdout: *** 1 TEST FAILED ***
+Run completed in 227 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 3, failed 1, canceled 0, ignored 0, pending 0
+*** 1 TEST FAILED ***
+Read from stdout: Failed tests:
+Failed tests:
+Read from stdout: 	Base64Spec
+	Base64Spec
+Read from stdout: (test:test) sbt.TestsFailedException: Tests unsuccessful
+(test:test) sbt.TestsFailedException: Tests unsuccessful
+Total time: 1 s, completed 25.05.2016 21:16:26
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2785414d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 4cb6670b, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 1.001473526 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.05.2016 21:16:57
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@3e39c3fc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@6e3b2929))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@7e0c916f))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@6e3b2929, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URL *** FAILED ***
+Read from stdout: "Zm%3D%3D" did not equal "Zm8%3D" (Base64Spec.scala:22)
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URLNOPAD
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to BASE64[0m
+[32mBase64[0m
+[31m- should encode to BASE64URL *** FAILED ***[0m
+[31m  "Zm%3D%3D" did not equal "Zm8%3D" (Base64Spec.scala:22)[0m
+[32mBase64[0m
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+Read from stdout: Run completed in 331 milliseconds.
+Read from stdout: Total number of tests run: 4
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 3, failed 1, canceled 0, ignored 0, pending 0
+Read from stdout: *** 1 TEST FAILED ***
+Run completed in 331 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 3, failed 1, canceled 0, ignored 0, pending 0
+*** 1 TEST FAILED ***
+Read from stdout: Failed tests:
+Failed tests:
+Read from stdout: 	Base64Spec
+	Base64Spec
+Read from stdout: (test:test) sbt.TestsFailedException: Tests unsuccessful
+(test:test) sbt.TestsFailedException: Tests unsuccessful
+Total time: 1 s, completed 25.05.2016 21:16:58
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@71eec805, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler f530bda, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 0.847971848 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.05.2016 21:18:14
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@13885336, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@2a78df65))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@28596690))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@2a78df65, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URL
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URLNOPAD
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to BASE64[0m
+[32mBase64[0m
+[32m- should encode to BASE64URL[0m
+[32mBase64[0m
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+Read from stdout: Run completed in 278 milliseconds.
+Read from stdout: Total number of tests run: 4
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+Read from stdout: All tests passed.
+Run completed in 278 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
+Passed tests:
+	Base64Spec
+Total time: 1 s, completed 25.05.2016 21:18:14
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3c590fa5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 2fa407ad, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: ')' expected but integer literal found.
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: ')' expected but integer literal found.
+Read from stdout: val pads = if ( (builder charAt (len-2) == '=') 2
+        val pads = if ( (builder charAt (len-2) == '=') 2
+Read from stdout: ^
+                                                        ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: ')' expected but integer literal found.
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: ')' expected but integer literal found.
+Read from stdout: else if ( (builder charAt (len-1) == '=') 1
+                   else if ( (builder charAt (len-1) == '=') 1
+Read from stdout: ^
+                                                             ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 25.05.2016 21:27:31
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@57d5268c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 2c7cb08c, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: ')' expected but integer literal found.
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: ')' expected but integer literal found.
+Read from stdout: val pads = if ( (builder charAt (len-2) == '=') 2
+        val pads = if ( (builder charAt (len-2) == '=') 2
+Read from stdout: ^
+                                                        ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: ')' expected but integer literal found.
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: ')' expected but integer literal found.
+Read from stdout: else if ( (builder charAt (len-1) == '=') 1
+                   else if ( (builder charAt (len-1) == '=') 1
+Read from stdout: ^
+                                                             ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 25.05.2016 21:27:55
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b179fae, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 1c60a74, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:47: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:47: not found: value builder
+Read from stdout: val len = builder.length
+        val len = builder.length
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: not found: value builder
+Read from stdout: val pads = if ( (builder charAt (len-2)) == '=') 2
+        val pads = if ( (builder charAt (len-2)) == '=') 2
+Read from stdout: ^
+                         ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: not found: value builder
+Read from stdout: else if ( (builder charAt (len-1)) == '=') 1
+                   else if ( (builder charAt (len-1)) == '=') 1
+Read from stdout: ^
+                              ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:51: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:51: not found: value builder
+Read from stdout: builder replace (builder.length - pads, builder.length, "%3D"*pads)
+        builder replace (builder.length - pads, builder.length, "%3D"*pads)
+Read from stdout: ^
+        ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:51: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:51: not found: value builder
+Read from stdout: builder replace (builder.length - pads, builder.length, "%3D"*pads)
+        builder replace (builder.length - pads, builder.length, "%3D"*pads)
+Read from stdout: ^
+                         ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:51: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:51: not found: value builder
+Read from stdout: builder replace (builder.length - pads, builder.length, "%3D"*pads)
+        builder replace (builder.length - pads, builder.length, "%3D"*pads)
+Read from stdout: ^
+                                                ^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 25.05.2016 21:28:31
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3fcd9b52, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 34617826, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:48: not found: value builder
+Read from stdout: val pads = if ( (builder charAt (len-2)) == '=') 2
+        val pads = if ( (builder charAt (len-2)) == '=') 2
+Read from stdout: ^
+                         ^
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: not found: value builder
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:49: not found: value builder
+Read from stdout: else if ( (builder charAt (len-1)) == '=') 1
+                   else if ( (builder charAt (len-1)) == '=') 1
+Read from stdout: ^
+                              ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 25.05.2016 21:29:13
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@65ca5ffd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 518cdf5e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 0.912633681 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.05.2016 21:29:27
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ba9725b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@37594c9))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@766c10ae))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@37594c9, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URL
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URLNOPAD
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to BASE64[0m
+[32mBase64[0m
+[32m- should encode to BASE64URL[0m
+[32mBase64[0m
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+Read from stdout: Run completed in 332 milliseconds.
+Read from stdout: Total number of tests run: 4
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+Read from stdout: All tests passed.
+Run completed in 332 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
+Passed tests:
+	Base64Spec
+Total time: 1 s, completed 25.05.2016 21:29:28
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6560c2d8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 33ccfeef, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 0.913743233 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.05.2016 21:30:23
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@64030f5c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@7d4dc3e4))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@72625af2))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@7d4dc3e4, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URL *** FAILED ***
+Read from stdout: java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+Read from stdout: at java.lang.AbstractStringBuilder.charAt(AbstractStringBuilder.java:210)
+Read from stdout: at java.lang.StringBuilder.charAt(StringBuilder.java:76)
+Read from stdout: at scala.collection.mutable.StringBuilder.charAt(StringBuilder.scala:113)
+Read from stdout: at de.csmath.codec.Base64Encoder$.percEncode(Base64Encoder.scala:49)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:39)
+Read from stdout: at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:85)
+Read from stdout: at de.csmath.codec.Base64$.encode(Base64.scala:14)
+Read from stdout: at Base64Spec$$anonfun$2.apply$mcV$sp(Base64Spec.scala:20)
+Read from stdout: at Base64Spec$$anonfun$2.apply(Base64Spec.scala:19)
+Read from stdout: at Base64Spec$$anonfun$2.apply(Base64Spec.scala:19)
+Read from stdout: ...
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URLNOPAD
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to BASE64[0m
+[32mBase64[0m
+[31m- should encode to BASE64URL *** FAILED ***[0m
+[31m  java.lang.StringIndexOutOfBoundsException: String index out of range: -2[0m
+[31m  at java.lang.AbstractStringBuilder.charAt(AbstractStringBuilder.java:210)[0m
+[31m  at java.lang.StringBuilder.charAt(StringBuilder.java:76)[0m
+[31m  at scala.collection.mutable.StringBuilder.charAt(StringBuilder.scala:113)[0m
+[31m  at de.csmath.codec.Base64Encoder$.percEncode(Base64Encoder.scala:49)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:39)[0m
+[31m  at de.csmath.codec.Base64Encoder$.encode(Base64Encoder.scala:85)[0m
+[31m  at de.csmath.codec.Base64$.encode(Base64.scala:14)[0m
+[31m  at Base64Spec$$anonfun$2.apply$mcV$sp(Base64Spec.scala:20)[0m
+[31m  at Base64Spec$$anonfun$2.apply(Base64Spec.scala:19)[0m
+[31m  at Base64Spec$$anonfun$2.apply(Base64Spec.scala:19)[0m
+[31m  ...[0m
+[32mBase64[0m
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+Read from stdout: Run completed in 232 milliseconds.
+Read from stdout: Total number of tests run: 4
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 3, failed 1, canceled 0, ignored 0, pending 0
+Read from stdout: *** 1 TEST FAILED ***
+Run completed in 232 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 3, failed 1, canceled 0, ignored 0, pending 0
+*** 1 TEST FAILED ***
+Read from stdout: Failed tests:
+Failed tests:
+Read from stdout: 	Base64Spec
+	Base64Spec
+Read from stdout: (test:test) sbt.TestsFailedException: Tests unsuccessful
+(test:test) sbt.TestsFailedException: Tests unsuccessful
+Total time: 1 s, completed 25.05.2016 21:30:24
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e0f0617, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 71e06060, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:50: Int(0) does not take parameters
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:50: Int(0) does not take parameters
+Read from stdout: else if ( len > 0 (b charAt (len-1)) == '=') 1
+                   else if ( len > 0 (b charAt (len-1)) == '=') 1
+Read from stdout: ^
+                                     ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 25.05.2016 21:31:37
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@568a852b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 1f1548e4, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:50: Int(0) does not take parameters
+/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala:50: Int(0) does not take parameters
+Read from stdout: else if ( len > 0 (b charAt (len-1)) == '=') 1
+                   else if ( len > 0 (b charAt (len-1)) == '=') 1
+Read from stdout: ^
+                                     ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 25.05.2016 21:31:48
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e973b0b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler aaec9f1, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 0.761135578 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.05.2016 21:32:00
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@7adbcd96, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@3e991b3))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@5d70919a))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@3e991b3, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URL
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URLNOPAD
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to BASE64[0m
+[32mBase64[0m
+[32m- should encode to BASE64URL[0m
+[32mBase64[0m
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+Read from stdout: Run completed in 217 milliseconds.
+Read from stdout: Total number of tests run: 4
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+Read from stdout: All tests passed.
+Run completed in 217 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
+Passed tests:
+	Base64Spec
+Total time: 1 s, completed 25.05.2016 21:32:01
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7fa5e60f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 61200c5f, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
+Scala compilation took 1.450177371 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed 25.05.2016 21:32:41
+> server-post-command-cleanup
+> server-handle-next-server-request
+> test
+Evaluating tasks: test:test
+Running task... Cancel: sbt.server.ServerTaskCancellation@3a0b8a3c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
+Framework implementation 'org.specs2.runner.Specs2Framework' not present.
+Framework implementation 'org.specs2.runner.SpecsFramework' not present.
+Framework implementation 'org.specs.runner.SpecsFramework' not present.
+Framework implementation 'com.novocode.junit.JUnitFramework' not present.
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@66725457))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@2af99d67))
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@66725457, false, [SuiteSelector])
+Read from stdout: Base64Spec:
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URL
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64NOPAD
+Read from stdout: Base64
+Read from stdout: - should encode to BASE64URLNOPAD
+[32mBase64Spec:[0m
+[32mBase64[0m
+[32m- should encode to BASE64[0m
+[32mBase64[0m
+[32m- should encode to BASE64URL[0m
+[32mBase64[0m
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+Read from stdout: Run completed in 213 milliseconds.
+Read from stdout: Total number of tests run: 4
+Read from stdout: Suites: completed 1, aborted 0
+Read from stdout: Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+Read from stdout: All tests passed.
+Run completed in 213 milliseconds.
+Total number of tests run: 4
+Suites: completed 1, aborted 0
+Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
+Passed tests:
+	Base64Spec
+Total time: 1 s, completed 25.05.2016 21:32:42
 > server-post-command-cleanup
 > server-handle-next-server-request
