@@ -31,11 +31,8 @@ trait StreamCodec {
     def filledStream(groupSize: Int, s:Stream[Seq[Int]]): Stream[(Int,Seq[Int])] =
         if (s.isEmpty) Stream.empty
         else {
-            var item: Seq[Int] = s.head
-            val fill = groupSize - item.length
-            while (item.length < groupSize) {
-                item = item :+ 0
-            }
+            val fill = groupSize - s.head.length
+            val item = s.head ++ Seq.tabulate(fill)( x => 0 )
             (fill, item) #:: filledStream(groupSize, s.tail)
         }
 
