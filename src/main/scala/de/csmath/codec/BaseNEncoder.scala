@@ -1,29 +1,52 @@
 package de.csmath.codec
 
+/** The class BaseNEncoder is the abstract class for all base-N endocer classes.
+ */
 abstract class BaseNEncoder extends StreamCodec {
 
+    /** The code alphabet.
+     */
     protected val chars: Vector[Byte]
 
+    /** The size of the elements of bytes which need to be encoded together.
+     */
     protected val groupSize: Int
 
-    /**
-     * encode: (Traversable[Byte],String) => Stream[Byte]
+    /** A baseN encoded stream of Bytes.
+     *  @param data The stream or other kind of Traversable of bytes.
+     *  @param enc  The codec to use for encoding.
+     *  @return     The encoded Stream of Bytes.
      */
     def encode(data: Traversable[Byte], enc: Codec.Value) = {
-
-        val needPads = Codec.needPads(enc)
-
-        val group = filledStream(groupSize,groupStream(groupSize,intStream(data)))
-        val charStream = group map ( encodeGroup(_,needPads))
-
+        val groups = filledStream(groupSize,groupStream(groupSize,intStream(data)))
+        val charStream = groups map ( encodeGroup(_,Codec.needPads(enc)) )
         flatten(charStream) map (_.toByte)
     }
 
-    def encodeGroup(x: (Int,Seq[Int]), needPad: Boolean): Traversable[Byte]
+    /** Encodes a group of Integers. The number of elements of the groupis
+     *  determined by the value of the field groupSize.
+     *  @param group   The pair (fill, seq) with fill being the number of zero-elements
+     *                 added to the group to get enough elements for encoding and seq
+     *                 being the group of Integers to be encoded.
+     *  @param needPad true if the filled zero-elements need to be encoded to
+     *                 pad-elements and false if they can be omitted.
+     *  @return        A sequence of endoded Bytes
+     */
+    def encodeGroup(group: (Int,Seq[Int]), needPad: Boolean): Traversable[Byte]
 
+    /** A baseN encoded string.
+     *  @param bytes The stream or other kind of Traversable of bytes.
+     *  @param enc   The codec to use for encoding.
+     *  @return      The encoded string.
+     */
     def encodeToString(bytes: Traversable[Byte], enc: Codec.Value): String =
         encode(bytes, enc) map (_.toChar) mkString
 
+    /** A baseN encoded string.
+     *  @param text The string to be encoded.
+     *  @param enc  The codec to use for encoding.
+     *  @return     The encoded string.
+     */
     def encodeToString(text: String, enc: Codec.Value): String =
         encode(text.getBytes, enc) map (_.toChar) mkString
 
