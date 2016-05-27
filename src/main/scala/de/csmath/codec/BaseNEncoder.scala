@@ -4,6 +4,10 @@ package de.csmath.codec
  */
 abstract class BaseNEncoder extends StreamCodec {
 
+    /** The number of the pad symbol in the coding alphabet
+     */
+    protected val pad: Int
+
     /** The code alphabet.
      */
     protected val chars: Vector[Byte]
@@ -50,5 +54,12 @@ abstract class BaseNEncoder extends StreamCodec {
     def encodeToString(text: String, enc: Codec.Value): String =
         encode(text.getBytes, enc) map (_.toChar) mkString
 
+    /** A sequence of pad symbols.
+     *  @param n       The number of needed pad symbols
+     *  @param needPad true iff pads are needed.
+     */
+    def addPads(n: Int, needPad: Boolean) =
+        if (needPad) Seq.tabulate(n)( x => chars(pad))
+        else Seq()
 
 }
