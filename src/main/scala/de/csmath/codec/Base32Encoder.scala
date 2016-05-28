@@ -6,11 +6,9 @@ import Codec._
 class Base32Encoder extends BaseNEncoder {
 
     val groupSize = 5
-    val pad = 32
 
     override val chars = Vector() ++ (((65 to 90) map (_.toByte)) ++
-                                      ((50 to 55) map (_.toByte)) :+
-                                      '='.toByte)
+                                      ((50 to 55) map (_.toByte)) )
 
     /**
      * encodeTriple: (Array[Int],Boolean,Int) => Array[Char]

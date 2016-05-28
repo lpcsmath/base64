@@ -26,9 +26,11 @@ object Base32 {
 
     def encoder(enc: Codec.Value) = enc match {
         case BASE32          => new Base32Encoder()
-        // case BASE32NOPAD     => new Base32Encoder()
-        // case BASE32URL       => new Base32UrlEncoder()
-        // case BASE32URLNOPAD  => new Base32UrlEncoder()
+        case BASE32HEX       => new Base32HexEncoder()
+        case BASE32URL       => new Base32UrlEncoder()
+        case BASE32HEXURL    => new Base32HexUrlEncoder()
+        case BASE32NOPAD     => new Base32Encoder()
+        case BASE32HEXNOPAD  => new Base32HexEncoder()
     }
 
 
