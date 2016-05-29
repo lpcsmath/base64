@@ -14,7 +14,7 @@ trait CanonicalPadding extends Padding {
      *  @return        A sequence of type Byte with the ASCII code of '='.
      */
     override def addPads(n: Int, needPad: Boolean) =
-        if (needPad) Seq.tabulate(n)( x => '='.toByte)
+        if (needPad) Seq() padTo (n, '='.toByte)
         else Seq()
 
 }
@@ -28,7 +28,6 @@ trait UrlPadding extends Padding {
      */
     override def addPads(n: Int, needPad: Boolean) =
         if (!needPad) Seq()
-        else
-            Seq.tabulate(n)( x => Seq() ++ "%3D".getBytes ) flatten
+        else Seq() padTo (n, Seq() ++ "%3D".getBytes ) flatten
 
 }

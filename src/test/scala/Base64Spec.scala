@@ -1,6 +1,7 @@
 import org.scalatest._
 import de.csmath.codec.Base64._
 import de.csmath.codec.Codec._
+import scala.util._
 
 
 class Base64Spec extends FlatSpec with Matchers {
@@ -68,4 +69,16 @@ class Base64Spec extends FlatSpec with Matchers {
       encodeToString("foobar", BASE64URLNOPAD) should === ("Zm9vYmFy")
       encodeToString(List[Byte](-1,-17), BASE64URLNOPAD) should === ("_-8")
   }
+
+  "Base64" should "decode to BASE64" in {
+      decodeToString("", BASE64) should === (Success(""))
+      decodeToString("Zg==", BASE64) should === (Success("f"))
+      decodeToString("Zm8=", BASE64) should === (Success("fo"))
+      decodeToString("Zm9v", BASE64) should === (Success("foo"))
+      decodeToString("Zm9vYg==", BASE64) should === (Success("foob"))
+      decodeToString("Zm9vYmE=", BASE64) should === (Success("fooba"))
+      decodeToString("Zm9vYmFy", BASE64) should === (Success("foobar"))
+      decode("/+8=".getBytes, BASE64) should === (Success(Seq(-1,-17)))
+  }
+
 }
