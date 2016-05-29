@@ -24,8 +24,11 @@ object Base16 {
     def encodeToString(data: Traversable[Byte], enc: Codec.Value): String =
         encoder(enc).encodeToString(data, enc)
 
+
+    lazy val base16Enc = new Base16Encoder()
+
     def encoder(enc: Codec.Value) = enc match {
-        case BASE16          => new Base16Encoder()
+        case BASE16          => base16Enc
     }
 
 

@@ -44,22 +44,30 @@ object Base64 {
     def decodeToString(data: String, enc: Codec.Value, size: Long): Try[String] =
         decoder(enc).decodeToString(data,enc,size)
 
+
+    lazy val base64Enc = new Base64Encoder()
+    lazy val base64UrlEnc = new Base64UrlEncoder()
+    lazy val base64FileEnc = new Base64FileEncoder()
+    lazy val base64Dec = new Base64Decoder()
+    //lazy val base64UrlDec = new Base64UrlDecoder()
+    //lazy val base64FileDec = new Base64FileDecoder()
+
     def encoder(enc: Codec.Value) = enc match {
-        case BASE64          => new Base64Encoder()
-        case BASE64NOPAD     => new Base64Encoder()
-        case BASE64URL       => new Base64UrlEncoder()
-        case BASE64URLNOPAD  => new Base64UrlEncoder()
-        case BASE64FILE      => new Base64FileEncoder()
-        case BASE64FILENOPAD => new Base64FileEncoder()
+        case BASE64          => base64Enc
+        case BASE64NOPAD     => base64Enc
+        case BASE64URL       => base64UrlEnc
+        case BASE64URLNOPAD  => base64UrlEnc
+        case BASE64FILE      => base64FileEnc
+        case BASE64FILENOPAD => base64FileEnc
     }
 
     def decoder(enc: Codec.Value) = enc match {
-        case BASE64          => new Base64Decoder()
-        //case BASE64NOPAD     => new Base64Decoder()
-        //case BASE64URL       => new Base64UrlDecoder()
-        //case BASE64URLNOPAD  => new Base64UrlDecoder()
-        //case BASE64FILE      => new Base64FileDecoder()
-        //case BASE64FILENOPAD => new Base64FileDecoder()
+        case BASE64          => base64Dec
+        case BASE64NOPAD     => base64Dec
+        //case BASE64URL       => base64UrlDec
+        //case BASE64URLNOPAD  => base64UrlDec
+        //case BASE64FILE      => base64FileDec
+        //case BASE64FILENOPAD => base64FileDec
     }
 
 

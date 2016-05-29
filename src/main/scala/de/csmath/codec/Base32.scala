@@ -24,13 +24,19 @@ object Base32 {
     def encodeToString(data: Traversable[Byte], enc: Codec.Value): String =
         encoder(enc).encodeToString(data, enc)
 
+
+    lazy val base32Enc = new Base32Encoder()
+    lazy val base32UrlEnc = new Base32UrlEncoder()
+    lazy val base32HexEnc = new Base32HexEncoder()
+    lazy val base32HexUrlEnc = new Base32HexUrlEncoder()
+
     def encoder(enc: Codec.Value) = enc match {
-        case BASE32          => new Base32Encoder()
-        case BASE32HEX       => new Base32HexEncoder()
-        case BASE32URL       => new Base32UrlEncoder()
-        case BASE32HEXURL    => new Base32HexUrlEncoder()
-        case BASE32NOPAD     => new Base32Encoder()
-        case BASE32HEXNOPAD  => new Base32HexEncoder()
+        case BASE32          => base32Enc
+        case BASE32HEX       => base32HexEnc
+        case BASE32URL       => base32UrlEnc
+        case BASE32HEXURL    => base32HexUrlEnc
+        case BASE32NOPAD     => base32Enc
+        case BASE32HEXNOPAD  => base32HexEnc
     }
 
 
