@@ -29,6 +29,9 @@ object Base64 {
     def decode(data: Traversable[Byte], enc: Codec.Value): Try[Stream[Byte]] =
         decoder(enc).decode(data,enc)
 
+    def decode(data: String, enc: Codec.Value): Try[Stream[Byte]] =
+        decoder(enc).decode(data.getBytes,enc)
+
     def decodeToString(data: Traversable[Byte], enc: Codec.Value): Try[String] =
         decoder(enc).decodeToString(data,enc)
 
@@ -37,6 +40,10 @@ object Base64 {
 
     def decode(data: Traversable[Byte], enc: Codec.Value, size: Long): Try[Stream[Byte]] =
         decoder(enc).decode(data,enc,size)
+
+    def decode(data: String, enc: Codec.Value, size: Long): Try[Stream[Byte]] =
+        decoder(enc).decode(data.getBytes,enc,size)
+
 
     def decodeToString(data: Traversable[Byte], enc: Codec.Value, size: Long): Try[String] =
         decoder(enc).decodeToString(data,enc,size)
@@ -49,8 +56,8 @@ object Base64 {
     lazy val base64UrlEnc = new Base64UrlEncoder()
     lazy val base64FileEnc = new Base64FileEncoder()
     lazy val base64Dec = new Base64Decoder()
-    //lazy val base64UrlDec = new Base64UrlDecoder()
-    //lazy val base64FileDec = new Base64FileDecoder()
+    lazy val base64UrlDec = new Base64UrlDecoder()
+    lazy val base64FileDec = new Base64FileDecoder()
 
     def encoder(enc: Codec.Value) = enc match {
         case BASE64          => base64Enc
@@ -64,10 +71,10 @@ object Base64 {
     def decoder(enc: Codec.Value) = enc match {
         case BASE64          => base64Dec
         case BASE64NOPAD     => base64Dec
-        //case BASE64URL       => base64UrlDec
-        //case BASE64URLNOPAD  => base64UrlDec
-        //case BASE64FILE      => base64FileDec
-        //case BASE64FILENOPAD => base64FileDec
+        case BASE64URL       => base64UrlDec
+        case BASE64URLNOPAD  => base64UrlDec
+        case BASE64FILE      => base64FileDec
+        case BASE64FILENOPAD => base64FileDec
     }
 
 

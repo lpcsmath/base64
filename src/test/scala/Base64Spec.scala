@@ -70,7 +70,7 @@ class Base64Spec extends FlatSpec with Matchers {
       encodeToString(List[Byte](-1,-17), BASE64URLNOPAD) should === ("_-8")
   }
 
-  "Base64" should "decode to BASE64" in {
+  "Base64" should "decode from BASE64" in {
       decodeToString("", BASE64) should === (Success(""))
       decodeToString("Zg==", BASE64) should === (Success("f"))
       decodeToString("Zm8=", BASE64) should === (Success("fo"))
@@ -81,7 +81,7 @@ class Base64Spec extends FlatSpec with Matchers {
       decode("/+8=".getBytes, BASE64) should === (Success(Seq(-1,-17)))
   }
 
-  "Base64" should "decode to BASE64 w/o padding" in {
+  "Base64" should "decode from BASE64 w/o padding" in {
       decodeToString("", BASE64) should === (Success(""))
       decodeToString("Zg", BASE64,1) should === (Success("f"))
       decodeToString("Zm8", BASE64,2) should === (Success("fo"))
@@ -89,7 +89,7 @@ class Base64Spec extends FlatSpec with Matchers {
       decodeToString("Zm9vYg", BASE64,4) should === (Success("foob"))
       decodeToString("Zm9vYmE", BASE64,5) should === (Success("fooba"))
       decodeToString("Zm9vYmFy", BASE64,6) should === (Success("foobar"))
-      decode("/+8".getBytes, BASE64,2) should === (Success(Seq(-1,-17)))
+      decode("/+8", BASE64,2) should === (Success(Seq(-1,-17)))
   }
 
   "Base64" should "fail with crap" in {
@@ -97,6 +97,40 @@ class Base64Spec extends FlatSpec with Matchers {
       decodeToString("Zg==Zg==", BASE64).isFailure should === (true)
       decodeToString("Zg", BASE64).isFailure should === (true)
       decodeToString("Zg", BASE64,2).isFailure should === (true)
+  }
+
+  "Base64" should "decode from BASE64FILE" in {
+      decodeToString("", BASE64FILE) should === (Success(""))
+      decodeToString("Zg==", BASE64FILE) should === (Success("f"))
+      decodeToString("Zm8=", BASE64FILE) should === (Success("fo"))
+      decodeToString("Zm9v", BASE64FILE) should === (Success("foo"))
+      decodeToString("Zm9vYg==", BASE64FILE) should === (Success("foob"))
+      decodeToString("Zm9vYmE=", BASE64FILE) should === (Success("fooba"))
+      decodeToString("Zm9vYmFy", BASE64FILE) should === (Success("foobar"))
+      decode("_-8=", BASE64FILE) should === (Success(Seq(-1,-17)))
+  }
+
+  "Base64" should "decode from BASE64FILE w/o padding" in {
+      decodeToString("", BASE64FILE) should === (Success(""))
+      decodeToString("Zg", BASE64FILE,1) should === (Success("f"))
+      decodeToString("Zm8", BASE64FILE,2) should === (Success("fo"))
+      decodeToString("Zm9v", BASE64FILE,3) should === (Success("foo"))
+      decodeToString("Zm9vYg", BASE64FILE,4) should === (Success("foob"))
+      decodeToString("Zm9vYmE", BASE64FILE,5) should === (Success("fooba"))
+      decodeToString("Zm9vYmFy", BASE64FILE,6) should === (Success("foobar"))
+      decode("_-8", BASE64FILE,2) should === (Success(Seq(-1,-17)))
+  }
+
+  "Base64" should "decode from BASE64URL" in {
+      decodeToString("", BASE64URL) should === (Success(""))
+      decodeToString("Zg%3D%3D", BASE64URL) should === (Success("f"))
+      decodeToString("Zm8%3D", BASE64URL) should === (Success("fo"))
+      decodeToString("Zm9v", BASE64URL) should === (Success("foo"))
+      decodeToString("Zm9vYg%3D%3D", BASE64URL) should === (Success("foob"))
+      decodeToString("Zm9vYmE%3D", BASE64URL) should === (Success("fooba"))
+      decodeToString("Zm9vYmFy", BASE64URL) should === (Success("foobar"))
+      decode("_-8%3D", BASE64URL) should === (Success(Seq(-1,-17)))
+      decodeToString("Zm9vYg==", BASE64URL) should === (Success("foob"))
   }
 
 }
