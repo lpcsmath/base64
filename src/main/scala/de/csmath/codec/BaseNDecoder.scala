@@ -12,9 +12,9 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
     val codeBitlen: Double
     val pad: Int
 
-    def decode(data:Traversable[Byte], enc: Codec.Value): Try[Stream[Byte]] = {
+    def decode(data:Traversable[Byte], enc: Codec.Value, codeSize: Long): Try[Stream[Byte]] = {
 
-        val size: Long = 0
+        val size = Math.ceil(codeSize * 8 / codeBitlen).toLong
         val s = checkedByteStream(allowedByte, data)
         val groups = s map { x =>
             invertBytes(filteredStream(crlfByte, x))
@@ -27,22 +27,20 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
         decGroups map (flatten(_))
     }
 
+    def decode(data:Traversable[Byte], enc: Codec.Value): Try[Stream[Byte]] =
+        decode(data,enc,0)
+
     def decodeToString(data:Traversable[Byte], enc: Codec.Value): Try[String] =
         decode(data,enc) map ( s => (s map (_.toChar)).mkString )
 
     def decodeToString(data: String, enc: Codec.Value): Try[String] =
         decodeToString(data.getBytes,enc)
 
-    def decode(data:Traversable[Byte], enc: Codec.Value, size: Long): Try[Stream[Byte]] = {
+    def decodeToString(data:Traversable[Byte], enc: Codec.Value, size: Long): Try[String] =
+        decode(data,enc,size) map ( s => (s map (_.toChar)).mkString )
 
-        val codeSize = Math.ceil(size * 8 / codeBitlen)
-        val s = checkedByteStream(allowedByte, data)
-        val groups = s map { x =>
-            groupBStream(groupSize,filteredStream(crlfByte, x))
-        }
-
-        ???
-    }
+    def decodeToString(data: String, enc: Codec.Value, size: Long): Try[String] =
+        decodeToString(data.getBytes,enc,size)
 
     def bitdec(num: Int, a: Byte, b: Byte): Byte
 
@@ -51,7 +49,7 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
     def decodeGroup(data: (Int,Seq[Byte]), inclPads: Boolean, size: Long): (Boolean,Try[Seq[Byte]]) = {
         val (num,x) = data
         val len = x.length
-        if (!checkLength(len))
+        if (!checkLength(num,len, size))
             return (false,Failure(new IllegalArgumentException("Length Error")))
         val (numNonPads,flag,intOk) = checkIntPadding(len,x)
         if (!intOk)
@@ -65,7 +63,10 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
         (last,Success(res take takeNonPads(numNonPads)))
     }
 
-    def checkLength(len: Int) = len > 1
+    def checkLength(num: Int, len: Int, size: Long) =
+        (len > 1) &&
+        (size != 0 || len == 4) &&
+        (size == 0 || len == 4 || (size  == num + len))
 
     /** Checks the internal Padding, e.g. "A3=3" is not allowed.
      */

@@ -35,6 +35,15 @@ object Base64 {
     def decodeToString(data: String, enc: Codec.Value): Try[String] =
         decoder(enc).decodeToString(data,enc)
 
+    def decode(data: Traversable[Byte], enc: Codec.Value, size: Long): Try[Stream[Byte]] =
+        decoder(enc).decode(data,enc,size)
+
+    def decodeToString(data: Traversable[Byte], enc: Codec.Value, size: Long): Try[String] =
+        decoder(enc).decodeToString(data,enc,size)
+
+    def decodeToString(data: String, enc: Codec.Value, size: Long): Try[String] =
+        decoder(enc).decodeToString(data,enc,size)
+
     def encoder(enc: Codec.Value) = enc match {
         case BASE64          => new Base64Encoder()
         case BASE64NOPAD     => new Base64Encoder()

@@ -81,4 +81,22 @@ class Base64Spec extends FlatSpec with Matchers {
       decode("/+8=".getBytes, BASE64) should === (Success(Seq(-1,-17)))
   }
 
+  "Base64" should "decode to BASE64 w/o padding" in {
+      decodeToString("", BASE64) should === (Success(""))
+      decodeToString("Zg", BASE64,1) should === (Success("f"))
+      decodeToString("Zm8", BASE64,2) should === (Success("fo"))
+      decodeToString("Zm9v", BASE64,3) should === (Success("foo"))
+      decodeToString("Zm9vYg", BASE64,4) should === (Success("foob"))
+      decodeToString("Zm9vYmE", BASE64,5) should === (Success("fooba"))
+      decodeToString("Zm9vYmFy", BASE64,6) should === (Success("foobar"))
+      decode("/+8".getBytes, BASE64,2) should === (Success(Seq(-1,-17)))
+  }
+
+  "Base64" should "fail with crap" in {
+      decodeToString("Zg=8", BASE64).isFailure should === (true)
+      decodeToString("Zg==Zg==", BASE64).isFailure should === (true)
+      decodeToString("Zg", BASE64).isFailure should === (true)
+      decodeToString("Zg", BASE64,2).isFailure should === (true)
+  }
+
 }
