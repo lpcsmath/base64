@@ -42,9 +42,10 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
     def decodeToString(data: String, enc: Codec.Value, size: Long): Try[String] =
         decodeToString(data.getBytes,enc,size)
 
-    def bitdec(num: Int, a: Byte, b: Byte): Byte
+    def bitdec(group: Seq[Byte]): Seq[Byte]
 
-    def takeNonPads(numChars: Int): Int
+    def takeNonPads(numChars: Int): Int =
+        Math.floor(numChars * codeBitlen / 8).toInt
 
     def decodeGroup(data: (Int,Seq[Byte]), inclPads: Boolean, size: Long): (Boolean,Try[Seq[Byte]]) = {
         val (num,x) = data
@@ -56,17 +57,16 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
             return (false,Failure(new IllegalArgumentException("Padding Error")))
         val last = flag || (size > 0) && (num.toLong * groupSize + len == size)
 
-        val res = ((x zip x.tail) zip (1 to 8)) map { x =>
-            val ((a,b),i) = x
-            bitdec(i,a,b)
-        }
-        (last,Success(res take takeNonPads(numNonPads)))
+        val res = bitdec(x.padTo(groupSize, pad.toByte))
+        val numBytes = if (numNonPads < len) numNonPads else len
+        (last,Success(res take takeNonPads(numBytes)))
     }
 
     def checkLength(num: Int, len: Int, size: Long) =
         (len > 1) &&
-        (size != 0 || len == 4) &&
-        (size == 0 || len == 4 || (size  == num + len))
+        (size != 0 || len == groupSize) &&
+        (size == 0 || len == groupSize || (size  == num + len)) &&
+        (size == 0 || num < size - groupSize || (size  == num + len))
 
     /** Checks the internal Padding, e.g. "A3=3" is not allowed.
      */

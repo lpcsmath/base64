@@ -1,13 +1,13 @@
-New log file opened at Mon May 30 09:12:58 CEST 2016 by 1579@Lothars-MBP.fritz.box
-jvm 1579@Lothars-MBP.fritz.box
+New log file opened at Mon May 30 11:44:43 CEST 2016 by 2606@Lothars-MacBook-Pro.fritz.box
+jvm 2606@Lothars-MacBook-Pro.fritz.box
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
+Waiting for sbt command engine
 Command engine arguments=List()
 Command engine baseDirectory=/Users/lpfeiler/develop/github/base64
-Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/lpfeiler/develop/github/base64/project, returning: (base64-build)
 Loading project definition from /Users/lpfeiler/develop/github/base64/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5cbf1224, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@68110296, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -66,490 +66,84 @@ Set current project to base64 (in build file:/Users/lpfeiler/develop/github/base
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@503073ce, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@68d7abc2, check cycles: false
 
 Initial source changes: 
 	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
+	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala)
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
 
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Read from stdout: Compiling 3 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 3 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 56e880e2, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 5e1402f, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
 	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value checkedByteStream
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value checkedByteStream
-Read from stdout: checkedByteStream(allowedByte,data) map { s =>
-            checkedByteStream(allowedByte,data) map { s =>
-Read from stdout: ^
-            ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-Read from stdout: checkedByteStream(allowedByte,data) map { s =>
-            checkedByteStream(allowedByte,data) map { s =>
-Read from stdout: ^
-                              ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-Read from stdout: } else Success(data)
-        } else Success(data)
-Read from stdout: ^
-               ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-Read from stdout: f: (Traversable[Byte] => Try[Stream[Byte]])) =
-                       f: (Traversable[Byte] => Try[Stream[Byte]])) =
-Read from stdout: ^
-                                                ^
-Read from stdout: four errors found
-four errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 4 s, completed 30.05.2016 09:13:09
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@63d9b07a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 14d1110e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value checkedByteStream
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value checkedByteStream
-Read from stdout: checkedByteStream(allowedByte,data) map { s =>
-            checkedByteStream(allowedByte,data) map { s =>
-Read from stdout: ^
-            ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-Read from stdout: checkedByteStream(allowedByte,data) map { s =>
-            checkedByteStream(allowedByte,data) map { s =>
-Read from stdout: ^
-                              ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-Read from stdout: } else Success(data)
-        } else Success(data)
-Read from stdout: ^
-               ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-Read from stdout: f: (Traversable[Byte] => Try[Stream[Byte]])) =
-                       f: (Traversable[Byte] => Try[Stream[Byte]])) =
-Read from stdout: ^
-                                                ^
-Read from stdout: four errors found
-four errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 30.05.2016 09:13:11
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@2b1c259, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 634f251a, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value checkedByteStream
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value checkedByteStream
-Read from stdout: checkedByteStream(allowedByte,data) map { s =>
-            checkedByteStream(allowedByte,data) map { s =>
-Read from stdout: ^
-            ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-Read from stdout: checkedByteStream(allowedByte,data) map { s =>
-            checkedByteStream(allowedByte,data) map { s =>
-Read from stdout: ^
-                              ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-Read from stdout: } else Success(data)
-        } else Success(data)
-Read from stdout: ^
-               ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-Read from stdout: f: (Traversable[Byte] => Try[Stream[Byte]])) =
-                       f: (Traversable[Byte] => Try[Stream[Byte]])) =
-Read from stdout: ^
-                                                ^
-Read from stdout: four errors found
-four errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 2 s, completed 30.05.2016 09:13:13
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@19db270e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 5290d7d4, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:3: ';' expected but identifier found.
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:3: ';' expected but identifier found.
-Read from stdout: trait PercentDecoder extens StreamDecoder {
-trait PercentDecoder extens StreamDecoder {
-Read from stdout: ^
-                     ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 0 s, completed 30.05.2016 09:14:46
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4c52f7e4, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 54460fe9, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: not found: value allowedByte
-Read from stdout: checkedByteStream(allowedByte,data) map { s =>
-            checkedByteStream(allowedByte,data) map { s =>
-Read from stdout: ^
-                              ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-Read from stdout: } else Success(data)
-        } else Success(data)
-Read from stdout: ^
-               ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-Read from stdout: f: (Traversable[Byte] => Try[Stream[Byte]])) =
-                       f: (Traversable[Byte] => Try[Stream[Byte]])) =
-Read from stdout: ^
-                                                ^
-Read from stdout: three errors found
-three errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 30.05.2016 09:15:27
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1ca3753c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 554b95df, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: type mismatch;
-Read from stdout: found   : (Set[Byte], Byte) => Boolean
-Read from stdout: required: Byte => Boolean
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:10: type mismatch;
- found   : (Set[Byte], Byte) => Boolean
- required: Byte => Boolean
-Read from stdout: checkedByteStream(validByte,data) map { s =>
-            checkedByteStream(validByte,data) map { s =>
-Read from stdout: ^
-                              ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-Read from stdout: } else Success(data)
-        } else Success(data)
-Read from stdout: ^
-               ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-Read from stdout: f: (Traversable[Byte] => Try[Stream[Byte]])) =
-                       f: (Traversable[Byte] => Try[Stream[Byte]])) =
-Read from stdout: ^
-                                                ^
-Read from stdout: three errors found
-three errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 30.05.2016 09:16:53
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@366e6692, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 3ae86402, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:14: not found: value Success
-Read from stdout: } else Success(data)
-        } else Success(data)
-Read from stdout: ^
-               ^
-Read from stdout: /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala:6: not found: type Try
-Read from stdout: f: (Traversable[Byte] => Try[Stream[Byte]])) =
-                       f: (Traversable[Byte] => Try[Stream[Byte]])) =
-Read from stdout: ^
-                                                ^
-Read from stdout: two errors found
-two errors found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 1 s, completed 30.05.2016 09:17:06
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@117af6c6, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler ab09e29, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Scala compilation took 1.813284143 s
+Scala compilation took 3.981715331 s
+Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala...
+Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala...
+Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
+The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala source file has the following regular definitions changed:
+	percentDecode, decodeAndApply.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
+Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala...
+Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala...
+Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala)
+The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
 Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala...
 Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala...
 Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
+Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
+Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
 The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala source file has the following regular definitions changed:
-	filteredStream, notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, notifyAll, isInstanceOf, ==, validByte, clone, $init$, checkedByteStream, toString, !=, getClass, decodeAndApply, PercentDecoder, ne, eq, ##, finalize, hashCode.
+	percentDecode, decodeAndApply.
 All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala: Set(percentDecode)
+None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 30.05.2016 09:17:25
+Total time: 6 s, completed 30.05.2016 11:44:58
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@2d5d6724, check cycles: false
-Received TaskFinished for a task we don't know about TaskFinished(9,901,Some(AttributeKey[scala.collection.Seq[java.lang.String]]("scalacOptions") in Scope(Global)),true,None)
-Received TaskFinished for a task we don't know about TaskFinished(9,901,Some(AttributeKey[scala.collection.Seq[java.lang.String]]("scalacOptions") in Scope(Global)),true,None)
+Running task... Cancel: sbt.server.ServerTaskCancellation@705e2726, check cycles: false
+Received TaskFinished for a task we don't know about TaskFinished(2,115,None,true,None)
+Received TaskFinished for a task we don't know about TaskFinished(2,115,None,true,None)
 Use 'last' for the full log.
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@2de105a5, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7f35a7e5, check cycles: false
 registered more than once? Task((triggeredBy: List(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),discoveredMainClasses)))
 registered more than once? Task((triggeredBy: List(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),discoveredMainClasses)))
 Use 'last' for the full log.
@@ -558,27 +152,18 @@ Use 'last' for the full log.
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@dd56deb, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@90997d0, check cycles: false
 registered more than once? streams-manager
 registered more than once? streams-manager
 Use 'last' for the full log.
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@625c818, check cycles: false
-registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))
-registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))
-Use 'last' for the full log.
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@66c099c6, check cycles: false
-registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))
-registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))
+> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ad04f3a, check cycles: false
+registered more than once? Task((triggeredBy: List(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),discoveredMainClasses)))
+registered more than once? Task((triggeredBy: List(Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),compile)))), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/Users/lpfeiler/develop/github/base64/,base64)),Select(ConfigKey(compile)),Global,Global),discoveredMainClasses)))
 Use 'last' for the full log.
 > server-post-command-error-handler
 > server-post-command-cleanup

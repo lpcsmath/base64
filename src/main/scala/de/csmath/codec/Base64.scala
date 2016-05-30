@@ -10,7 +10,7 @@ object Base64 {
     /**
      * encode: (Iterable[Byte],String) => Stream[Byte]
      */
-    def encode(data: Traversable[Byte], enc: Codec.Value): Stream[Byte] =
+    def encode(data: Traversable[Byte], enc: Codec.Value = BASE64): Stream[Byte] =
         encoder(enc).encode(data,enc)
 
 

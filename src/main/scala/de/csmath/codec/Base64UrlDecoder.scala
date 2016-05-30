@@ -7,8 +7,7 @@ import scala.util._
 class Base64UrlDecoder extends Base64FileDecoder with PercentDecoder {
 
 
-    override def decode(data:Traversable[Byte], enc: Codec.Value, codeSize: Long): Try[Stream[Byte]] = {
-        decodeAndApply( data, chars.keySet, super.decode(_,enc,codeSize) )
-    }
+    override def decode(data:Traversable[Byte], enc: Codec.Value, codeSize: Long): Try[Stream[Byte]] =
+        percentDecode(data, chars.keySet) flatMap ( super.decode(_,enc,codeSize) )
 
 }

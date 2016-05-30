@@ -82,7 +82,7 @@ class Base64Spec extends FlatSpec with Matchers {
   }
 
   "Base64" should "decode from BASE64 w/o padding" in {
-      decodeToString("", BASE64) should === (Success(""))
+      decodeToString("", BASE64,0) should === (Success(""))
       decodeToString("Zg", BASE64,1) should === (Success("f"))
       decodeToString("Zm8", BASE64,2) should === (Success("fo"))
       decodeToString("Zm9v", BASE64,3) should === (Success("foo"))

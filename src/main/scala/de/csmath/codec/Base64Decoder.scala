@@ -19,14 +19,14 @@ class Base64Decoder extends BaseNDecoder {
 
     override val pad = 64
 
-    override def bitdec(num: Int, a: Byte, b: Byte) = num match {
-        case 1 => ((a << 2) ^ (b >> 4 & 3)).toByte
-        case _ if b == pad => 0.toByte
-        case 2 => (((a & 15) << 4) ^ ((b >> 2) & 15)).toByte
-        case 3 => (((a & 3) << 6) ^ b).toByte
-        case _ => 0.toByte
+    override def bitdec(group: Seq[Byte]): Seq[Byte] = {
+        val Seq(w,x,y,z) = group
+        val a = ((w << 2) ^ (x >> 4 & 3)).toByte
+        val b = if (y == pad) 0.toByte
+                    else (((x & 15) << 4) ^ ((y >> 2) & 15)).toByte
+        val c = if (z == pad) 0.toByte
+                    else (((y & 3) << 6) ^ z).toByte
+        Seq(a,b,c)
     }
-
-    def takeNonPads(numChars: Int): Int = numChars - 1
 
 }

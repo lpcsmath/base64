@@ -2,6 +2,8 @@ import org.scalatest._
 import de.csmath.codec.Base32._
 import de.csmath.codec.Codec._
 
+import scala.util._
+
 
 class Base32Spec extends FlatSpec with Matchers {
 
@@ -63,6 +65,26 @@ class Base32Spec extends FlatSpec with Matchers {
       encodeToString("foob", BASE32HEXURL) should === ("CPNMUOG%3D")
       encodeToString("fooba", BASE32HEXURL) should === ("CPNMUOJ1")
       encodeToString("foobar", BASE32HEXURL) should === ("CPNMUOJ1E8%3D%3D%3D%3D%3D%3D")
+  }
+
+  "Base32" should "decode from BASE32" in {
+      decodeToString("", BASE32) should === (Success(""))
+      decodeToString("MY======", BASE32) should === (Success("f"))
+      decodeToString("MZXQ====", BASE32) should === (Success("fo"))
+      decodeToString("MZXW6===", BASE32) should === (Success("foo"))
+      decodeToString("MZXW6YQ=", BASE32) should === (Success("foob"))
+      decodeToString("MZXW6YTB", BASE32) should === (Success("fooba"))
+      decodeToString("MZXW6YTBOI======", BASE32) should === (Success("foobar"))
+  }
+
+  "Base32" should "decode from BASE32 w/o padding" in {
+      decodeToString("", BASE32,0) should === (Success(""))
+      decodeToString("MY", BASE32,1) should === (Success("f"))
+      decodeToString("MZXQ", BASE32,2) should === (Success("fo"))
+      decodeToString("MZXW6", BASE32,3) should === (Success("foo"))
+      decodeToString("MZXW6YQ", BASE32,4) should === (Success("foob"))
+      decodeToString("MZXW6YTB", BASE32,5) should === (Success("fooba"))
+      decodeToString("MZXW6YTBOI", BASE32,6) should === (Success("foobar"))
   }
 
 }

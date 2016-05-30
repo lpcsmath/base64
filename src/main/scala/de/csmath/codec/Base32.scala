@@ -2,6 +2,8 @@ package de.csmath.codec;
 
 import Codec._
 
+import scala.util._
+
 
 object Base32 {
 
@@ -24,6 +26,31 @@ object Base32 {
     def encodeToString(data: Traversable[Byte], enc: Codec.Value): String =
         encoder(enc).encodeToString(data, enc)
 
+    def decode(data: Traversable[Byte], enc: Codec.Value): Try[Stream[Byte]] =
+        decoder(enc).decode(data,enc)
+
+    def decode(data: String, enc: Codec.Value): Try[Stream[Byte]] =
+        decoder(enc).decode(data.getBytes,enc)
+
+    def decodeToString(data: Traversable[Byte], enc: Codec.Value): Try[String] =
+        decoder(enc).decodeToString(data,enc)
+
+    def decodeToString(data: String, enc: Codec.Value): Try[String] =
+        decoder(enc).decodeToString(data,enc)
+
+    def decode(data: Traversable[Byte], enc: Codec.Value, size: Long): Try[Stream[Byte]] =
+        decoder(enc).decode(data,enc,size)
+
+    def decode(data: String, enc: Codec.Value, size: Long): Try[Stream[Byte]] =
+        decoder(enc).decode(data.getBytes,enc,size)
+
+
+    def decodeToString(data: Traversable[Byte], enc: Codec.Value, size: Long): Try[String] =
+        decoder(enc).decodeToString(data,enc,size)
+
+    def decodeToString(data: String, enc: Codec.Value, size: Long): Try[String] =
+        decoder(enc).decodeToString(data,enc,size)
+
 
     lazy val base32Enc = new Base32Encoder()
     lazy val base32UrlEnc = new Base32UrlEncoder()
@@ -37,6 +64,12 @@ object Base32 {
         case BASE32HEXURL    => base32HexUrlEnc
         case BASE32NOPAD     => base32Enc
         case BASE32HEXNOPAD  => base32HexEnc
+    }
+
+    lazy val base32Dec = new Base32Decoder()
+
+    def decoder(enc: Codec.Value) = enc match {
+        case BASE32          => base32Dec
     }
 
 
