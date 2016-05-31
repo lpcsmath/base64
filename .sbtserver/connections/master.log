@@ -1,77 +1,67 @@
-New log file opened at Tue May 31 17:34:43 CEST 2016 by 6608@Lothars-MacBook-Pro.fritz.box
-Taking next connection to: 55727
-New client attempting to connect on port: 55728-55727
-  Address = /192.168.178.30:55727
-This client on port 55728 has uuid 86545d28-6e5e-487d-9029-eb82f336197e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-86545d28-6e5e-487d-9029-eb82f336197e
-Taking next connection to: 55727
-New client attempting to connect on port: 55729-55727
-  Address = /192.168.178.30:55727
-Handshake exception on socket: 55729
+New log file opened at Tue May 31 20:11:55 CEST 2016 by 7069@Lothars-MBP.fritz.box
+Taking next connection to: 56326
+New client attempting to connect on port: 56327-56326
+  Address = /192.168.178.30:56326
+This client on port 56327 has uuid 6c6c55de-27c2-4424-9022-3a179b76a5d0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-6c6c55de-27c2-4424-9022-3a179b76a5d0
+Taking next connection to: 56326
+New client attempting to connect on port: 56328-56326
+  Address = /192.168.178.30:56326
+Handshake exception on socket: 56328
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
 	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:209)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 55727
-New client attempting to connect on port: 55730-55727
-  Address = /192.168.178.30:55727
-This client on port 55730 has uuid bd587fba-32f9-4604-8f30-f4618fb96cc3 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-86545d28-6e5e-487d-9029-eb82f336197e, activator-bd587fba-32f9-4604-8f30-f4618fb96cc3
-Taking next connection to: 55727
+Taking next connection to: 56326
+New client attempting to connect on port: 56329-56326
+  Address = /192.168.178.30:56326
+This client on port 56329 has uuid 8dd82050-e6e4-4dbc-894b-9720ce4fedc8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-6c6c55de-27c2-4424-9022-3a179b76a5d0, activator-8dd82050-e6e4-4dbc-894b-9720ce4fedc8
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55727
+Taking next connection to: 56326

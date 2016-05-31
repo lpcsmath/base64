@@ -1,17 +1,27 @@
 package de.csmath.codec
 
 
-
+/**
+ *  This trait provides a helper function to pad a seqence of bytes to a
+ *  given size with appropriate pad symbols.
+ */
 trait Padding {
     def addPads(n: Int, needPad: Boolean): Seq[Byte]
 }
 
+
+/**
+ *  This trait provides a helper function to pad a seqence of bytes to a
+ *  given size with the pad symbols '='.
+ */
 trait CanonicalPadding extends Padding {
 
-    /** A sequence of pad symbols.
+    /**
+     *  Creates sequence of pad symbols.
      *  @param n       The number of needed pad symbols
-     *  @param needPad true iff pads are needed.
-     *  @return        A sequence of type Byte with the ASCII code of '='.
+     *  @param needPad <em>true</em> iff pads are needed.
+     *  @return        A sequence of type <em>Byte</em> with the ASCII code of
+     *                 the character '='.
      */
     override def addPads(n: Int, needPad: Boolean) =
         if (needPad) Seq() padTo (n, '='.toByte)
@@ -19,12 +29,20 @@ trait CanonicalPadding extends Padding {
 
 }
 
+
+/**
+ *  This trait provides a helper function to pad a seqence of bytes to a
+ *  given size with the percent encoded pad symbols '=' resulting in the byte
+ *  codes of the string "%3D".
+ */
 trait UrlPadding extends Padding {
 
-    /** A sequence of URL save pad symbols.
+    /**
+     *  Creates a sequence of <em>URL save</em> pad symbols.
      *  @param n       The number of needed pad symbols
-     *  @param needPad true iff pads are needed.
-     *  @return        A sequence of type Byte with the ASCII codes of "%3D".
+     *  @param needPad <em>true</em> iff pads are needed.
+     *  @return        A sequence of type <em>Byte</em> with the ASCII codes of
+     *                 the string "%3D".
      */
     override def addPads(n: Int, needPad: Boolean) =
         if (!needPad) Seq()

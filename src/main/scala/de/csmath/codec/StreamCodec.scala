@@ -32,7 +32,7 @@ trait StreamCodec {
         if (s.isEmpty) Stream.empty
         else {
             val fill = groupSize - s.head.length
-            val item = s.head ++ (Seq() padTo (fill, 0))
+            val item = s.head padTo (groupSize, 0)
             (fill, item) #:: filledStream(groupSize, s.tail)
         }
 

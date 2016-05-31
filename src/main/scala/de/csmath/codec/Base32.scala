@@ -33,7 +33,7 @@ object Base32 extends BaseN {
 
 
     /**
-     *  Decodes a <em>Bas32</em> encoded traversable collection of type
+     *  Decodes a <em>Base32</em> encoded traversable collection of type
      *  <em>Byte</em> to a plain stream of type <em>Byte</em> if the given
      *  collection is valid.
      *  @param data The traversable collection, which shall be decoded.
