@@ -35,6 +35,6 @@ import de.csmath.codec.Base64._
 import de.csmath.codec.Codec._
 
 decode("AQIDBA==".getBytes)                    // Success(Stream(1,?))  
-decode("AQIDBA==".getBytes) map (_.toList)    // Success(List(1,2,3,4))  
-decode("AQIDBA",BASE64NOPAD,4) map (_.toList) // Success(List(1,2,3,4))
+decode("AQIDBA==".getBytes) map (_.toList)     // Success(List(1,2,3,4))  
+decode("AQIDBA",BASE64NOPAD,4) map (_.toList)  // Success(List(1,2,3,4))
 ```
