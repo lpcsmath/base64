@@ -1,35 +1,63 @@
 package de.csmath.codec;
 
+import scala.util._
 import Codec._
 
 
-object Base16 {
+/**
+ *  This object provides a set of operations to encode to (respectively
+ *  decode from) Base16, according to RFC 4648.
+ */
+object Base16 extends BaseN {
 
     /**
-     * encode: (Iterable[Byte],String) => Stream[Byte]
+     *  Encodes a traversable collection of type <em>Byte</em> to a Base16
+     *  encoded stream of type <em>Byte</em>.
+     *  @param data The traversable collection, which shall be encoded.
+     *  @param enc  The type of codec to use.
+     *  @return     A base16 encoded <em>Stream</em>.
      */
-    def encode(data: Traversable[Byte], enc: Codec.Value): Stream[Byte] =
+    override def encode(data: Traversable[Byte], enc: Codec.Value = BASE16): Stream[Byte] =
         encoder(enc).encode(data,enc)
 
 
     /**
-     * encode: (String,String) => String
+     *  Encodes a traversable collection of type <em>Byte</em> to a
+     *  <em>Base16</em> encoded <em>String</em>.
+     *  @param data The traversable collection, which shall be encoded.
+     *  @param enc  The type of codec to use.
+     *  @return     A base16 encoded <em>String</em>.
      */
-    def encodeToString(s: String, enc: Codec.Value): String =
-        encoder(enc).encodeToString(s, enc)
-
-    /**
-     * encode: (Iterable[Byte],String) => String
-     */
-    def encodeToString(data: Traversable[Byte], enc: Codec.Value): String =
+    override def encodeToString(data: Traversable[Byte], enc: Codec.Value = BASE16): String =
         encoder(enc).encodeToString(data, enc)
 
 
+    /**
+     *  An instance of a <em>Base16Encoder</em>.
+     */
     lazy val base16Enc = new Base16Encoder()
 
+
+    /**
+     *  Chooses the appropriate encoder instance according to the given codec.
+     *  @param enc The Codec.
+     *  @return    An encoder instance.
+     */
     def encoder(enc: Codec.Value) = enc match {
         case BASE16          => base16Enc
     }
+
+
+    /**
+     *  Chooses the appropriate decoder instance according to the given codec.
+     *  @param enc The Codec.
+     *  @return    An decoder instance.
+     */
+    def decoder(enc: Codec.Value) = ???
+
+    // enc match {
+    //     case BASE16          => base16Dec
+    // }
 
 
 }
