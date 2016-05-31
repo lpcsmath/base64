@@ -44,8 +44,8 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
 
     def bitdec(group: Seq[Byte]): Seq[Byte]
 
-    def takeNonPads(numChars: Int): Int =
-        Math.floor(numChars * codeBitlen / 8).toInt
+    def takeNonPads(group: Seq[Byte], numChars: Int): Seq[Byte] =
+        group take (numChars * codeBitlen / 8).toInt
 
     def decodeGroup(data: (Int,Seq[Byte]), inclPads: Boolean, size: Long): (Boolean,Try[Seq[Byte]]) = {
         val (num,x) = data
@@ -59,7 +59,7 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
 
         val res = bitdec(x.padTo(groupSize, pad.toByte))
         val numBytes = if (numNonPads < len) numNonPads else len
-        (last,Success(res take takeNonPads(numBytes)))
+        (last,Success(takeNonPads(res,numBytes)))
     }
 
     def checkLength(num: Int, len: Int, size: Long) =

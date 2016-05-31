@@ -87,6 +87,21 @@ object Base32 extends BaseN {
      */
     lazy val base32Dec = new Base32Decoder()
 
+    /**
+     *  An instance of a <em>Base32UrlDecoder</em>.
+     */
+    lazy val base32UrlDec = new Base32UrlDecoder()
+
+    /**
+     *  An instance of a <em>Base32UrlDecoder</em>.
+     */
+    lazy val base32HexDec = new Base32HexDecoder()
+
+    /**
+     *  An instance of a <em>Base32UrlDecoder</em>.
+     */
+    lazy val base32HexUrlDec = new Base32HexUrlDecoder()
+
 
     /**
      *  Chooses the appropriate encoder instance according to the given codec.
@@ -110,6 +125,9 @@ object Base32 extends BaseN {
      */
     def decoder(enc: Codec.Value) = enc match {
         case BASE32          => base32Dec
+        case BASE32URL       => base32UrlDec
+        case BASE32HEX       => base32HexDec
+        case BASE32HEXURL    => base32HexUrlDec
     }
 
 

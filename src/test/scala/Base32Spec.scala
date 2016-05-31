@@ -87,4 +87,44 @@ class Base32Spec extends FlatSpec with Matchers {
       decodeToString("MZXW6YTBOI", BASE32,6) should === (Success("foobar"))
   }
 
+  "Base32" should "decode from BASE32URL" in {
+      decodeToString("", BASE32URL) should === (Success(""))
+      decodeToString("MY%3D%3D%3D%3D%3D%3D", BASE32URL) should === (Success("f"))
+      decodeToString("MZXQ%3D%3D%3D%3D", BASE32URL) should === (Success("fo"))
+      decodeToString("MZXW6%3D%3D%3D", BASE32URL) should === (Success("foo"))
+      decodeToString("MZXW6YQ%3D", BASE32URL) should === (Success("foob"))
+      decodeToString("MZXW6YTB", BASE32URL) should === (Success("fooba"))
+      decodeToString("MZXW6YTBOI%3D%3D%3D%3D%3D%3D", BASE32URL) should === (Success("foobar"))
+  }
+
+  "Base32" should "decode from BASE32HEX" in {
+      decodeToString("", BASE32HEX) should === (Success(""))
+      decodeToString("CO======", BASE32HEX) should === (Success("f"))
+      decodeToString("CPNG====", BASE32HEX) should === (Success("fo"))
+      decodeToString("CPNMU===", BASE32HEX) should === (Success("foo"))
+      decodeToString("CPNMUOG=", BASE32HEX) should === (Success("foob"))
+      decodeToString("CPNMUOJ1", BASE32HEX) should === (Success("fooba"))
+      decodeToString("CPNMUOJ1E8======", BASE32HEX) should === (Success("foobar"))
+  }
+
+  "Base32" should "decode from BASE32HEX w/o padding" in {
+      decodeToString("", BASE32HEX,0) should === (Success(""))
+      decodeToString("CO", BASE32HEX,1) should === (Success("f"))
+      decodeToString("CPNG", BASE32HEX,2) should === (Success("fo"))
+      decodeToString("CPNMU", BASE32HEX,3) should === (Success("foo"))
+      decodeToString("CPNMUOG", BASE32HEX,4) should === (Success("foob"))
+      decodeToString("CPNMUOJ1", BASE32HEX,5) should === (Success("fooba"))
+      decodeToString("CPNMUOJ1E8", BASE32HEX,6) should === (Success("foobar"))
+  }
+
+  "Base32" should "decode from BASE32HEXURL" in {
+      decodeToString("", BASE32HEXURL) should === (Success(""))
+      decodeToString("CO%3D%3D%3D%3D%3D%3D", BASE32HEXURL) should === (Success("f"))
+      decodeToString("CPNG%3D%3D%3D%3D", BASE32HEXURL) should === (Success("fo"))
+      decodeToString("CPNMU%3D%3D%3D", BASE32HEXURL) should === (Success("foo"))
+      decodeToString("CPNMUOG%3D", BASE32HEXURL) should === (Success("foob"))
+      decodeToString("CPNMUOJ1", BASE32HEXURL) should === (Success("fooba"))
+      decodeToString("CPNMUOJ1E8%3D%3D%3D%3D%3D%3D", BASE32HEXURL) should === (Success("foobar"))
+  }
+
 }
