@@ -2,7 +2,7 @@
 
 ### Implementation of RFC 4648 in Scala.
 
-under construction
+under construction especially Base32 and Base16.
 
 #### Base64
 
