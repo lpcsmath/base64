@@ -1,5 +1,6 @@
 package de.csmath.codec
 
+
 /**
  *  The class BaseNEncoder is the abstract class for all baseN encoder classes.
  */

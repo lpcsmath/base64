@@ -2,8 +2,9 @@ package de.csmath.codec
 
 import scala.util._
 
+
 /**
- *  The class BaseNEncoder is the abstract class for all base-N decoder classes.
+ *  The class BaseNDecoder is the abstract class for all base-N decoder classes.
  */
 abstract class BaseNDecoder extends StreamDecoder {
 

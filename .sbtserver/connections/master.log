@@ -1,13 +1,13 @@
-New log file opened at Wed Jun 01 17:09:15 CEST 2016 by 8945@Lothars-MBP.fritz.box
-Taking next connection to: 59993
-New client attempting to connect on port: 59994-59993
-  Address = /192.168.178.30:59993
-This client on port 59994 has uuid 76e5fb8a-df6f-4bc9-98a2-bccae4d45e07 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-76e5fb8a-df6f-4bc9-98a2-bccae4d45e07
-Taking next connection to: 59993
-New client attempting to connect on port: 59995-59993
-  Address = /192.168.178.30:59993
-Handshake exception on socket: 59995
+New log file opened at Wed Jun 01 18:00:54 CEST 2016 by 9064@Lothars-MBP.fritz.box
+Taking next connection to: 60276
+New client attempting to connect on port: 60277-60276
+  Address = /192.168.178.30:60276
+This client on port 60277 has uuid 42be23ac-6ffa-459d-9bc1-b9ed79cf56c1 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-42be23ac-6ffa-459d-9bc1-b9ed79cf56c1
+Taking next connection to: 60276
+New client attempting to connect on port: 60278-60276
+  Address = /192.168.178.30:60276
+Handshake exception on socket: 60278
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -21,9 +21,15 @@ Caused by: java.net.SocketException: Connection reset
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 59993
-New client attempting to connect on port: 59996-59993
-  Address = /192.168.178.30:59993
-This client on port 59996 has uuid ede98637-167a-4104-b102-e6cee753e463 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-76e5fb8a-df6f-4bc9-98a2-bccae4d45e07, activator-ede98637-167a-4104-b102-e6cee753e463
-Taking next connection to: 59993
+Taking next connection to: 60276
+New client attempting to connect on port: 60279-60276
+  Address = /192.168.178.30:60276
+This client on port 60279 has uuid 5331cb38-4562-4bb5-bc6c-1dec9f5b340e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-42be23ac-6ffa-459d-9bc1-b9ed79cf56c1, activator-5331cb38-4562-4bb5-bc6c-1dec9f5b340e
+Taking next connection to: 60276
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60276
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60276

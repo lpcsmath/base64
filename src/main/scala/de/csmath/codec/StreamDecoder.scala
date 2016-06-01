@@ -2,6 +2,7 @@ package de.csmath.codec
 
 import scala.util._
 
+
 /**
  *  This trait provides stream operations for byte oriented decoders.
  */
@@ -36,5 +37,5 @@ trait StreamDecoder extends StreamCodec {
      */
     protected def filteredStream(pred: (Byte => Boolean), s:Stream[Byte]) =
         s filter pred
-        
+
 }

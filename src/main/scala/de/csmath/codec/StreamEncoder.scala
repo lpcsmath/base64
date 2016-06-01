@@ -2,6 +2,7 @@ package de.csmath.codec
 
 import scala.util._
 
+
 /**
  *  This trait provides stream operations for byte oriented encoders.
  */
