@@ -21,7 +21,6 @@ object Base64 extends BaseN {
         encoder(enc).encode(data,enc)
 
 
-
     /**
      *  Encodes a traversable collection of type <em>Byte</em> to a
      *  <em>Base64</em> encoded <em>String</em>.
@@ -122,6 +121,5 @@ object Base64 extends BaseN {
         case BASE64FILE      => base64FileDec
         case BASE64FILENOPAD => base64FileDec
     }
-
 
 }

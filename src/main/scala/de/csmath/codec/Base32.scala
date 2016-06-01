@@ -130,5 +130,4 @@ object Base32 extends BaseN {
         case BASE32HEXURL    => base32HexUrlDec
     }
 
-
 }
