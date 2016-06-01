@@ -1,13 +1,13 @@
-New log file opened at Wed Jun 01 10:35:14 CEST 2016 by 7829@Lothars-MacBook-Pro.fritz.box
-Taking next connection to: 58101
-New client attempting to connect on port: 58108-58101
-  Address = /192.168.178.30:58101
-This client on port 58108 has uuid 2f9f6df0-64f5-4fcd-a236-1f82f83ace2a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-2f9f6df0-64f5-4fcd-a236-1f82f83ace2a
-Taking next connection to: 58101
-New client attempting to connect on port: 58115-58101
-  Address = /192.168.178.30:58101
-Handshake exception on socket: 58115
+New log file opened at Wed Jun 01 11:45:33 CEST 2016 by 8148@Lothars-MacBook-Pro.fritz.box
+Taking next connection to: 58636
+New client attempting to connect on port: 58637-58636
+  Address = /192.168.178.30:58636
+This client on port 58637 has uuid 4aae82b1-f027-4afd-8e0a-bd46287897c0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-4aae82b1-f027-4afd-8e0a-bd46287897c0
+Taking next connection to: 58636
+New client attempting to connect on port: 58638-58636
+  Address = /192.168.178.30:58636
+Handshake exception on socket: 58638
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,51 +17,18 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 58101
-New client attempting to connect on port: 58116-58101
-  Address = /192.168.178.30:58101
-This client on port 58116 has uuid ae98b41d-4ad2-475a-9699-30337423d3ed configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-2f9f6df0-64f5-4fcd-a236-1f82f83ace2a, activator-ae98b41d-4ad2-475a-9699-30337423d3ed
-Taking next connection to: 58101
-New client attempting to connect on port: 58117-58101
-  Address = /192.168.178.30:58101
-Handshake exception on socket: 58117
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 58101
-New client attempting to connect on port: 58118-58101
-  Address = /192.168.178.30:58101
-This client on port 58118 has uuid 4250def8-4b64-4c77-80cb-5083dbe415e9 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-2f9f6df0-64f5-4fcd-a236-1f82f83ace2a, activator-ae98b41d-4ad2-475a-9699-30337423d3ed, activator-4250def8-4b64-4c77-80cb-5083dbe415e9
-Taking next connection to: 58101
+Taking next connection to: 58636
+New client attempting to connect on port: 58639-58636
+  Address = /192.168.178.30:58636
+This client on port 58639 has uuid cf23d714-a756-48f4-bec3-619e1703e990 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-4aae82b1-f027-4afd-8e0a-bd46287897c0, activator-cf23d714-a756-48f4-bec3-619e1703e990
+Taking next connection to: 58636
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
+Taking next connection to: 58636
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
+Taking next connection to: 58636
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58101
+Taking next connection to: 58636

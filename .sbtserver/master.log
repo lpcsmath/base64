@@ -1,5 +1,5 @@
-New log file opened at Wed Jun 01 10:35:14 CEST 2016 by 7829@Lothars-MacBook-Pro.fritz.box
-jvm 7829@Lothars-MacBook-Pro.fritz.box
+New log file opened at Wed Jun 01 11:45:33 CEST 2016 by 8148@Lothars-MacBook-Pro.fritz.box
+jvm 8148@Lothars-MacBook-Pro.fritz.box
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/lpfeiler/develop/github/base64/project, returning: (base64-build)
 Loading project definition from /Users/lpfeiler/develop/github/base64/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4b5ea01e, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@18f9c8c2, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -64,191 +64,52 @@ Set current project to base64 (in build file:/Users/lpfeiler/develop/github/base
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3f3e8ca, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed 01.06.2016 10:35:24
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1314af3b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed 01.06.2016 10:35:24
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@4aa9a149, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed 01.06.2016 10:35:25
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@40568460, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed 01.06.2016 10:35:25
-> server-post-command-cleanup
-> server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1c178f5e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@56b100d3, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala)
 
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Read from stdout: Compiling 2 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
+Compiling 2 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
 Getting compiler-interface from component compiler for Scala 2.11.7
 Other repositories:
 Default repositories:
-Running cached compiler 2d39bae7, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Running cached compiler 62e01d59, interfacing (CompilerInterface) with Scala compiler version 2.11.7
 Calling Scala compiler with arguments  (CompilerInterface):
 	-bootclasspath
 	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
 	-classpath
 	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: there was one feature warning; re-run with -feature for details
-there was one feature warning; re-run with -feature for details
-Read from stdout: one warning found
-one warning found
-Scala compilation took 4.841435693 s
+Scala compilation took 4.09207337 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed 01.06.2016 10:36:40
+Total time: 6 s, completed 01.06.2016 11:45:47
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1d3ebfdd, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 7428b0bb, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: there was one feature warning; re-run with -feature for details
-there was one feature warning; re-run with -feature for details
-Read from stdout: one warning found
-one warning found
-Scala compilation took 1.45756459 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 01.06.2016 10:37:40
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4c81bbde, check cycles: false
+> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6b471433, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -265,12 +126,34 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 0 s, completed 01.06.2016 10:38:43
+Total time: 1 s, completed 01.06.2016 11:45:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@3b1f2f62, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 01.06.2016 11:45:49
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@665206b7, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@33e3b4d8, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -321,24 +204,57 @@ Framework implementation 'org.specs2.runner.Specs2Framework' not present.
 Framework implementation 'org.specs2.runner.SpecsFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@db86ff6))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@66f9856d))
-Running TaskDef(StreamCodecSpec, org.scalatest.tools.Framework$$anon$1@db86ff6, false, [SuiteSelector])
-Running TaskDef(StreamDecoderSpec, org.scalatest.tools.Framework$$anon$1@db86ff6, false, [SuiteSelector])
-Running TaskDef(StreamEncoderSpec, org.scalatest.tools.Framework$$anon$1@db86ff6, false, [SuiteSelector])
-Running TaskDef(Base32Spec, org.scalatest.tools.Framework$$anon$1@db86ff6, false, [SuiteSelector])
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@8a62c1))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@497a06e))
+Running TaskDef(StreamEncoderSpec, org.scalatest.tools.Framework$$anon$1@8a62c1, false, [SuiteSelector])
+Running TaskDef(Base32Spec, org.scalatest.tools.Framework$$anon$1@8a62c1, false, [SuiteSelector])
+Running TaskDef(StreamDecoderSpec, org.scalatest.tools.Framework$$anon$1@8a62c1, false, [SuiteSelector])
+Running TaskDef(Base16Spec, org.scalatest.tools.Framework$$anon$1@8a62c1, false, [SuiteSelector])
 Read from stdout: StreamDecoderSpec:
 Read from stdout: StreamDecoder
 Read from stdout: - should check allowed bytes
 Read from stdout: StreamEncoderSpec:
 [32mStreamDecoderSpec:[0m
 [32mStreamDecoder[0m
-[32m- should check allowed bytes[0m
 Read from stdout: StreamEncoder
 Read from stdout: - should create a IntStream
 [32mStreamEncoderSpec:[0m
 [32mStreamEncoder[0m
 [32m- should create a IntStream[0m
+[32m- should check allowed bytes[0m
+Read from stdout: Base16Spec:
+Read from stdout: Base16
+Read from stdout: - should encode to BASE16
+[32mBase16Spec:[0m
+[32mBase16[0m
+[32m- should encode to BASE16[0m
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@8a62c1, false, [SuiteSelector])
+Running TaskDef(StreamCodecSpec, org.scalatest.tools.Framework$$anon$1@8a62c1, false, [SuiteSelector])
+Read from stdout: Base32Spec:
+Read from stdout: Base32
+Read from stdout: - should encode to BASE32
+Read from stdout: Base32
+Read from stdout: - should encode to BASE32NOPAD
+Read from stdout: Base32
+Read from stdout: - should encode to BASE32URL
+Read from stdout: Base32
+Read from stdout: - should encode to BASE32HEX
+Read from stdout: Base32
+Read from stdout: - should encode to BASE32HEXNOPAD
+Read from stdout: Base32
+Read from stdout: - should encode to BASE32HEXURL
+Read from stdout: Base32
+Read from stdout: - should decode from BASE32
+Read from stdout: Base32
+Read from stdout: - should decode from BASE32 w/o padding
+Read from stdout: Base32
+Read from stdout: - should decode from BASE32URL
+Read from stdout: Base32
+Read from stdout: - should decode from BASE32HEX
+Read from stdout: Base32
+Read from stdout: - should decode from BASE32HEX w/o padding
+Read from stdout: Base32
+Read from stdout: - should decode from BASE32HEXURL
 Read from stdout: StreamCodecSpec:
 Read from stdout: StreamCodec
 Read from stdout: - should create a ByteStream
@@ -346,25 +262,29 @@ Read from stdout: StreamCodec
 Read from stdout: - should create a groupStream
 Read from stdout: StreamCodec
 Read from stdout: - should create a filledStream
+[32mBase32Spec:[0m
 Read from stdout: StreamCodec
 Read from stdout: - should flatten a filledStream
+[32mBase32[0m
 [32mStreamCodecSpec:[0m
 [32mStreamCodec[0m
+[32m- should encode to BASE32[0m
 [32m- should create a ByteStream[0m
 [32mStreamCodec[0m
+[32mBase32[0m
 [32m- should create a groupStream[0m
+[32m- should encode to BASE32NOPAD[0m
 [32mStreamCodec[0m
-Running TaskDef(Base16Spec, org.scalatest.tools.Framework$$anon$1@db86ff6, false, [SuiteSelector])
-Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@db86ff6, false, [SuiteSelector])
+[32mBase32[0m
 [32m- should create a filledStream[0m
 [32mStreamCodec[0m
 [32m- should flatten a filledStream[0m
-Read from stdout: Base16Spec:
-Read from stdout: Base16
-Read from stdout: - should encode to BASE16
-[32mBase16Spec:[0m
-[32mBase16[0m
-[32m- should encode to BASE16[0m
+[32m- should encode to BASE32URL[0m
+[32mBase32[0m
+[32m- should encode to BASE32HEX[0m
+[32mBase32[0m
+[32m- should encode to BASE32HEXNOPAD[0m
+[32mBase32[0m
 Read from stdout: Base64Spec:
 Read from stdout: Base64
 Read from stdout: - should encode to BASE64
@@ -391,7 +311,20 @@ Read from stdout: - should decode from BASE64FILE w/o padding
 Read from stdout: Base64
 Read from stdout: - should decode from BASE64URL
 [32mBase64Spec:[0m
+[32m- should encode to BASE32HEXURL[0m
+[32mBase32[0m
+[32m- should decode from BASE32[0m
+[32mBase32[0m
+[32m- should decode from BASE32 w/o padding[0m
+[32mBase32[0m
+[32m- should decode from BASE32URL[0m
+[32mBase32[0m
 [32mBase64[0m
+[32m- should decode from BASE32HEX[0m
+[32mBase32[0m
+[32m- should decode from BASE32HEX w/o padding[0m
+[32mBase32[0m
+[32m- should decode from BASE32HEXURL[0m
 [32m- should encode to BASE64[0m
 [32mBase64[0m
 [32m- should encode to BASE64FILE[0m
@@ -415,62 +348,12 @@ Read from stdout: - should decode from BASE64URL
 [32m- should decode from BASE64FILE w/o padding[0m
 [32mBase64[0m
 [32m- should decode from BASE64URL[0m
-Read from stdout: Base32Spec:
-Read from stdout: Base32
-Read from stdout: - should encode to BASE32
-Read from stdout: Base32
-Read from stdout: - should encode to BASE32NOPAD
-Read from stdout: Base32
-Read from stdout: - should encode to BASE32URL
-Read from stdout: Base32
-Read from stdout: - should encode to BASE32HEX
-Read from stdout: Base32
-Read from stdout: - should encode to BASE32HEXNOPAD
-Read from stdout: Base32
-Read from stdout: - should encode to BASE32HEXURL
-Read from stdout: Base32
-Read from stdout: - should decode from BASE32
-Read from stdout: Base32
-Read from stdout: - should decode from BASE32 w/o padding
-Read from stdout: Base32
-Read from stdout: - should decode from BASE32URL
-Read from stdout: Base32
-Read from stdout: - should decode from BASE32HEX
-Read from stdout: Base32
-Read from stdout: - should decode from BASE32HEX w/o padding
-Read from stdout: Base32
-Read from stdout: - should decode from BASE32HEXURL
-[32mBase32Spec:[0m
-[32mBase32[0m
-[32m- should encode to BASE32[0m
-[32mBase32[0m
-[32m- should encode to BASE32NOPAD[0m
-[32mBase32[0m
-[32m- should encode to BASE32URL[0m
-[32mBase32[0m
-[32m- should encode to BASE32HEX[0m
-[32mBase32[0m
-[32m- should encode to BASE32HEXNOPAD[0m
-[32mBase32[0m
-[32m- should encode to BASE32HEXURL[0m
-[32mBase32[0m
-[32m- should decode from BASE32[0m
-[32mBase32[0m
-[32m- should decode from BASE32 w/o padding[0m
-[32mBase32[0m
-[32m- should decode from BASE32URL[0m
-[32mBase32[0m
-[32m- should decode from BASE32HEX[0m
-[32mBase32[0m
-[32m- should decode from BASE32HEX w/o padding[0m
-[32mBase32[0m
-[32m- should decode from BASE32HEXURL[0m
-Read from stdout: Run completed in 1 second, 93 milliseconds.
+Read from stdout: Run completed in 1 second, 124 milliseconds.
 Read from stdout: Total number of tests run: 31
 Read from stdout: Suites: completed 6, aborted 0
 Read from stdout: Tests: succeeded 31, failed 0, canceled 0, ignored 0, pending 0
 Read from stdout: All tests passed.
-Run completed in 1 second, 93 milliseconds.
+Run completed in 1 second, 124 milliseconds.
 Total number of tests run: 31
 Suites: completed 6, aborted 0
 Tests: succeeded 31, failed 0, canceled 0, ignored 0, pending 0
@@ -482,102 +365,56 @@ Passed tests:
 	StreamDecoderSpec
 	Base32Spec
 	Base16Spec
-Total time: 2 s, completed 01.06.2016 10:38:44
+Total time: 2 s, completed 01.06.2016 11:45:51
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@3fc00fa5, check cycles: false
+> {file:/Users/lpfeiler/develop/github/base64/}base64/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a4ae6f6, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 3c91522e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: there was one feature warning; re-run with -feature for details
-there was one feature warning; re-run with -feature for details
-Read from stdout: one warning found
-one warning found
-Scala compilation took 1.5224654 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 01.06.2016 10:48:04
+Total time: 0 s, completed 01.06.2016 11:45:52
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@67125fe3, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@189cd6fc, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 47c26ad7, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Scala compilation took 1.126328066 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed 01.06.2016 10:55:14
+Total time: 0 s, completed 01.06.2016 12:05:46
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@3215df4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7626c88, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -628,40 +465,36 @@ Framework implementation 'org.specs2.runner.Specs2Framework' not present.
 Framework implementation 'org.specs2.runner.SpecsFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'com.novocode.junit.JUnitFramework' not present.
-Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@3e045b51))
-Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@68675118))
-Running TaskDef(StreamCodecSpec, org.scalatest.tools.Framework$$anon$1@3e045b51, false, [SuiteSelector])
-Running TaskDef(Base16Spec, org.scalatest.tools.Framework$$anon$1@3e045b51, false, [SuiteSelector])
-Running TaskDef(StreamDecoderSpec, org.scalatest.tools.Framework$$anon$1@3e045b51, false, [SuiteSelector])
-Running TaskDef(StreamEncoderSpec, org.scalatest.tools.Framework$$anon$1@3e045b51, false, [SuiteSelector])
-Read from stdout: Base16Spec:
-Read from stdout: Base16
-Read from stdout: - should encode to BASE16
-[32mBase16Spec:[0m
+Subclass fingerprints: List((org.scalatest.Suite,false,org.scalatest.tools.Framework$$anon$1@6892b7b6))
+Annotation fingerprints: List((org.scalatest.WrapWith,false,org.scalatest.tools.Framework$$anon$2@420fa439))
+Running TaskDef(Base32Spec, org.scalatest.tools.Framework$$anon$1@6892b7b6, false, [SuiteSelector])
+Running TaskDef(StreamDecoderSpec, org.scalatest.tools.Framework$$anon$1@6892b7b6, false, [SuiteSelector])
+Running TaskDef(StreamEncoderSpec, org.scalatest.tools.Framework$$anon$1@6892b7b6, false, [SuiteSelector])
+Running TaskDef(StreamCodecSpec, org.scalatest.tools.Framework$$anon$1@6892b7b6, false, [SuiteSelector])
 Read from stdout: StreamEncoderSpec:
-[32mBase16[0m
-[32m- should encode to BASE16[0m
 Read from stdout: StreamEncoder
 Read from stdout: - should create a IntStream
 Read from stdout: StreamDecoderSpec:
+[32mStreamEncoderSpec:[0m
+[32mStreamEncoder[0m
+[32m- should create a IntStream[0m
 Read from stdout: StreamDecoder
-Running TaskDef(Base32Spec, org.scalatest.tools.Framework$$anon$1@3e045b51, false, [SuiteSelector])
 Read from stdout: - should check allowed bytes
+Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@6892b7b6, false, [SuiteSelector])
 [32mStreamDecoderSpec:[0m
-Read from stdout: StreamCodecSpec:
 [32mStreamDecoder[0m
+[32m- should check allowed bytes[0m
+Read from stdout: StreamCodecSpec:
 Read from stdout: StreamCodec
 Read from stdout: - should create a ByteStream
-[32mStreamEncoderSpec:[0m
 Read from stdout: StreamCodec
-[32m- should check allowed bytes[0m
 Read from stdout: - should create a groupStream
 Read from stdout: StreamCodec
 Read from stdout: - should create a filledStream
 Read from stdout: StreamCodec
-[32mStreamEncoder[0m
 Read from stdout: - should flatten a filledStream
 [32mStreamCodecSpec:[0m
+Running TaskDef(Base16Spec, org.scalatest.tools.Framework$$anon$1@6892b7b6, false, [SuiteSelector])
 [32mStreamCodec[0m
 [32m- should create a ByteStream[0m
 [32mStreamCodec[0m
@@ -669,9 +502,13 @@ Read from stdout: - should flatten a filledStream
 [32mStreamCodec[0m
 [32m- should create a filledStream[0m
 [32mStreamCodec[0m
-[32m- should create a IntStream[0m
 [32m- should flatten a filledStream[0m
-Running TaskDef(Base64Spec, org.scalatest.tools.Framework$$anon$1@3e045b51, false, [SuiteSelector])
+Read from stdout: Base16Spec:
+Read from stdout: Base16
+Read from stdout: - should encode to BASE16
+[32mBase16Spec:[0m
+[32mBase16[0m
+[32m- should encode to BASE16[0m
 Read from stdout: Base64Spec:
 Read from stdout: Base64
 Read from stdout: - should encode to BASE64
@@ -702,48 +539,48 @@ Read from stdout: - should decode from BASE64URL
 [32m- should encode to BASE64[0m
 [32mBase64[0m
 [32m- should encode to BASE64FILE[0m
+Read from stdout: Base32Spec:
 [32mBase64[0m
 [32m- should encode to BASE64URL[0m
 [32mBase64[0m
-[32m- should encode to BASE64NOPAD[0m
-[32mBase64[0m
-[32m- should encode to BASE64FILENOPAD[0m
-[32mBase64[0m
-[32m- should encode to BASE64URLNOPAD[0m
-[32mBase64[0m
-[32m- should decode from BASE64[0m
-[32mBase64[0m
-[32m- should decode from BASE64 w/o padding[0m
-[32mBase64[0m
-[32m- should fail with crap[0m
-[32mBase64[0m
-[32m- should decode from BASE64FILE[0m
-[32mBase64[0m
-[32m- should decode from BASE64FILE w/o padding[0m
-[32mBase64[0m
-[32m- should decode from BASE64URL[0m
-Read from stdout: Base32Spec:
 Read from stdout: Base32
 Read from stdout: - should encode to BASE32
 Read from stdout: Base32
 Read from stdout: - should encode to BASE32NOPAD
 Read from stdout: Base32
+[32m- should encode to BASE64NOPAD[0m
+[32mBase64[0m
 Read from stdout: - should encode to BASE32URL
 Read from stdout: Base32
+[32m- should encode to BASE64FILENOPAD[0m
+[32mBase64[0m
+[32m- should encode to BASE64URLNOPAD[0m
+[32mBase64[0m
 Read from stdout: - should encode to BASE32HEX
 Read from stdout: Base32
+[32m- should decode from BASE64[0m
 Read from stdout: - should encode to BASE32HEXNOPAD
 Read from stdout: Base32
+[32mBase64[0m
+[32m- should decode from BASE64 w/o padding[0m
 Read from stdout: - should encode to BASE32HEXURL
 Read from stdout: Base32
+[32mBase64[0m
+[32m- should fail with crap[0m
+[32mBase64[0m
 Read from stdout: - should decode from BASE32
+[32m- should decode from BASE64FILE[0m
+[32mBase64[0m
 Read from stdout: Base32
 Read from stdout: - should decode from BASE32 w/o padding
 Read from stdout: Base32
 Read from stdout: - should decode from BASE32URL
+[32m- should decode from BASE64FILE w/o padding[0m
 Read from stdout: Base32
+[32mBase64[0m
 Read from stdout: - should decode from BASE32HEX
 Read from stdout: Base32
+[32m- should decode from BASE64URL[0m
 Read from stdout: - should decode from BASE32HEX w/o padding
 Read from stdout: Base32
 Read from stdout: - should decode from BASE32HEXURL
@@ -772,12 +609,12 @@ Read from stdout: - should decode from BASE32HEXURL
 [32m- should decode from BASE32HEX w/o padding[0m
 [32mBase32[0m
 [32m- should decode from BASE32HEXURL[0m
-Read from stdout: Run completed in 457 milliseconds.
+Read from stdout: Run completed in 874 milliseconds.
 Read from stdout: Total number of tests run: 31
 Read from stdout: Suites: completed 6, aborted 0
 Read from stdout: Tests: succeeded 31, failed 0, canceled 0, ignored 0, pending 0
 Read from stdout: All tests passed.
-Run completed in 457 milliseconds.
+Run completed in 874 milliseconds.
 Total number of tests run: 31
 Suites: completed 6, aborted 0
 Tests: succeeded 31, failed 0, canceled 0, ignored 0, pending 0
@@ -789,966 +626,6 @@ Passed tests:
 	StreamDecoderSpec
 	Base32Spec
 	Base16Spec
-Total time: 1 s, completed 01.06.2016 10:55:15
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@671ce939, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 7452de16, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Scala compilation took 1.126392008 s
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-New invalidations:
-	Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Recompiling all 27 sources: invalidated sources (20) exceeded 50.0% of all sources
-Read from stdout: Compiling 27 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 27 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 4f41c2c8, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: there were three feature warnings; re-run with -feature for details
-there were three feature warnings; re-run with -feature for details
-Read from stdout: one warning found
-one warning found
-Scala compilation took 4.526619509 s
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 6 s, completed 01.06.2016 10:57:53
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4a65fa14, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 4a167751, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Scala compilation took 0.915694615 s
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamCodec.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-New invalidations:
-	Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Recompiling all 27 sources: invalidated sources (20) exceeded 50.0% of all sources
-Read from stdout: Compiling 27 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Compiling 27 Scala sources to /Users/lpfeiler/develop/github/base64/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 25851789, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/lpfeiler/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/lpfeiler/develop/github/base64/target/scala-2.11/classes
-Read from stdout: there were three feature warnings; re-run with -feature for details
-there were three feature warnings; re-run with -feature for details
-Read from stdout: one warning found
-one warning found
-Scala compilation took 3.014987745 s
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/PercentDecoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/StreamEncoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-The following modified names cause invalidation of /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala: Set(groupStream)
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base16.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Encoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseNDecoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/BaseN.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64Decoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32Decoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexEncoder.scala source file has the following regular definitions changed:
-	groupStreamAux, groupStream.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32HexUrlEncoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlEncoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32UrlDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base32.scala. This dependency is not being considered for invalidation.
-Invalidating /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala...
-Invalidating (transitively) by inheritance from /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala...
-Initial set of included nodes: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala)
-Including /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala by /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala
-Invalidated by transitive inheritance dependency: Set(/Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala, /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala)
-The /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64FileDecoder.scala source file has the following regular definitions changed:
-	groupStream, groupStreamAux.
-All member reference dependencies will be considered within this context.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64UrlDecoder.scala. This dependency is not being considered for invalidation.
-None of the modified names appears in /Users/lpfeiler/develop/github/base64/src/main/scala/de/csmath/codec/Base64.scala. This dependency is not being considered for invalidation.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed 01.06.2016 10:59:02
+Total time: 2 s, completed 01.06.2016 12:05:47
 > server-post-command-cleanup
 > server-handle-next-server-request
