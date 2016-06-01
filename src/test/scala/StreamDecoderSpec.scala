@@ -9,16 +9,16 @@ class StreamDecoderSpec extends FlatSpec with Matchers {
       val list1 = List[Byte](1,2,3)
       val list2 = List[Byte](1,2,1,2)
       val allowed = Set[Byte](1,2)
-      val sc = new StreamDecoder() { }
+      val sc = new StreamDecoder() {
+          val pred = (x) => allowed contains x
+          val s = checkedByteStream(pred,list1)
+          val t = checkedByteStream(pred,list2)
+      }
 
-      val pred = (x) => allowed contains x
+      sc.s.isFailure should === (true)
+      sc.t.isSuccess should === (true)
 
-      val s = sc.checkedByteStream(pred,list1)
-      val t = sc.checkedByteStream(pred,list2)
-
-      s.isFailure should === (true)
-      t.isSuccess should === (true)
-      t match {
+      (sc.t: @unchecked) match {
           case Success(u) =>
             u.head should === (1)
             u.tail.head should === (2)

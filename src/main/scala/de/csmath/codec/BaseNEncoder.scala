@@ -3,7 +3,7 @@ package de.csmath.codec
 /**
  *  The class BaseNEncoder is the abstract class for all baseN endocer classes.
  */
-abstract class BaseNEncoder extends StreamCodec with CanonicalPadding {
+abstract class BaseNEncoder extends StreamEncoder with CanonicalPadding {
 
     /**
      *  The code alphabet.

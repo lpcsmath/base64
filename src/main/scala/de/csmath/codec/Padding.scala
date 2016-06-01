@@ -46,6 +46,6 @@ trait UrlPadding extends Padding {
      */
     override def addPads(n: Int, needPad: Boolean) =
         if (!needPad) Seq()
-        else Seq() padTo (n, Seq() ++ "%3D".getBytes ) flatten
+        else Seq() padTo (n, "%3D".getBytes ) flatten
 
 }

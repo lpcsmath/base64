@@ -4,7 +4,7 @@ import scala.util._
 
 /** The class BaseNEncoder is the abstract class for all base-N endocer classes.
  */
-abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
+abstract class BaseNDecoder extends StreamDecoder {
 
     val chars: Map[Byte,Byte]
 
@@ -15,13 +15,13 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
     def decode(data:Traversable[Byte], enc: Codec.Value, codeSize: Long): Try[Stream[Byte]] = {
 
         val size = Math.ceil(codeSize * 8 / codeBitlen).toLong
-        val s = checkedByteStream(allowedByte, data)
-        val groups = s map { x =>
-            invertBytes(filteredStream(crlfByte, x))
-        } map (groupBStream(groupSize,_))
+        val groups = checkedByteStream(allowedByte, data) map
+                     (invertBytes(_)) map
+                     (filteredStream(crlfByte, _)) map
+                     (groupStream(groupSize,_))
 
         val decGroups = groups map { s =>
-            Stream.from(0,groupSize) zip s map (decodeGroup(_,true,size))
+            countedGroups(s) map (decodeGroup(_,true,size))
         } flatMap (checkPrePadding(_))
 
         decGroups map (flatten(_))
@@ -42,12 +42,15 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
     def decodeToString(data: String, enc: Codec.Value, size: Long): Try[String] =
         decodeToString(data.getBytes,enc,size)
 
-    def bitdec(group: Seq[Byte]): Seq[Byte]
+    protected def bitdec(group: Seq[Byte]): Seq[Byte]
 
-    def takeNonPads(group: Seq[Byte], numChars: Int): Seq[Byte] =
+    protected def countedGroups(s: Stream[Seq[Byte]]): Stream[(Int,Seq[Byte])] =
+         Stream.from(0,groupSize) zip s
+
+    protected def takeNonPads(group: Seq[Byte], numChars: Int): Seq[Byte] =
         group take (numChars * codeBitlen / 8).toInt
 
-    def decodeGroup(data: (Int,Seq[Byte]), inclPads: Boolean, size: Long): (Boolean,Try[Seq[Byte]]) = {
+    protected def decodeGroup(data: (Int,Seq[Byte]), inclPads: Boolean, size: Long): (Boolean,Try[Seq[Byte]]) = {
         val (num,x) = data
         val len = x.length
         if (!checkLength(num,len, size))
@@ -62,7 +65,7 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
         (last,Success(takeNonPads(res,numBytes)))
     }
 
-    def checkLength(num: Int, len: Int, size: Long) =
+    protected def checkLength(num: Int, len: Int, size: Long) =
         (len > 1) &&
         (size != 0 || len == groupSize) &&
         (size == 0 || len == groupSize || (size  == num + len)) &&
@@ -70,7 +73,7 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
 
     /** Checks the internal Padding, e.g. "A3=3" is not allowed.
      */
-    def checkIntPadding(len: Int, x: Seq[Byte]): (Int,Boolean,Boolean) = {
+    protected def checkIntPadding(len: Int, x: Seq[Byte]): (Int,Boolean,Boolean) = {
         val last = x exists { y => y == pad }
         var idx = groupSize
         val ok = if (last) {
@@ -85,16 +88,16 @@ abstract class BaseNDecoder extends StreamCodec with StreamDecoder {
 
     protected def allowedByte(b: Byte) = chars.keySet contains b
 
-    protected def crlfByte(b: Byte) = !( b == 10 || b == 13)
+    protected def crlfByte(b: Byte) = b <= pad
 
-    def invertBytes(s: Stream[Byte]): Stream[Byte] =
+    protected def invertBytes(s: Stream[Byte]): Stream[Byte] =
         if (s.isEmpty) Stream.empty
         else chars get s.head match {
             case Some(x) => x #:: invertBytes(s.tail)
             case _ => Stream.empty
         }
 
-    def checkPrePadding(s: Stream[(Boolean,Try[Seq[Byte]])]): Try[Stream[Seq[Byte]]] =
+    protected def checkPrePadding(s: Stream[(Boolean,Try[Seq[Byte]])]): Try[Stream[Seq[Byte]]] =
         if (s.isEmpty) Success(Stream.empty)
         else s.head match {
             case (false,Success(x)) =>

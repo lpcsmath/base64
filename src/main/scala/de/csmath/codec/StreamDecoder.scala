@@ -2,9 +2,9 @@ package de.csmath.codec
 
 import scala.util._
 
-trait StreamDecoder {
+trait StreamDecoder extends StreamCodec {
 
-    def checkedByteStream(pred: (Byte => Boolean), data: Traversable[Byte]): Try[Stream[Byte]] =
+    protected def checkedByteStream(pred: (Byte => Boolean), data: Traversable[Byte]): Try[Stream[Byte]] =
         if (data.isEmpty) Success(Stream.empty)
         else
             if (pred(data.head))
@@ -13,6 +13,6 @@ trait StreamDecoder {
                 Failure( new IllegalArgumentException("Data contains illegal bytes."))
 
 
-    def filteredStream(pred: (Byte => Boolean), s:Stream[Byte]) =
+    protected def filteredStream(pred: (Byte => Boolean), s:Stream[Byte]) =
         s filter pred
 }
