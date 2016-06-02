@@ -87,6 +87,5 @@ import de.csmath.codec.Base64._
 decode("Z".getBytes)        // Failure(de.csmath.codec.RejectException: invalid length)
 decode("Zg=g".getBytes)     // Failure(de.csmath.codec.RejectException: wrong placed pad symbols)
 decode("Z;==".getBytes)     // Failure(de.csmath.codec.RejectException: data contains illegal bytes)
-decode("Zg=".getBytes)      // Failure(de.csmath.codec.RejectException: invalid length)
 decode("Zg==Zg==".getBytes) // Failure(de.csmath.codec.RejectException: pad symbols at illegal positions)
 ```
