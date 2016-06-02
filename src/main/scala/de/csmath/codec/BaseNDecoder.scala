@@ -265,7 +265,7 @@ abstract class BaseNDecoder extends StreamDecoder {
             case (_,Failure(x)) =>
                 Failure(x)
             case x =>
-                Failure(new RejectException("pad symbols at illegal positions"))
+                Failure(new RejectException("illegal concatenation"))
         }
 
 }
