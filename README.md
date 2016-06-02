@@ -71,6 +71,7 @@ shows the encoding of an non terminating stream.
 
 ```
 import de.csmath.codec.Base16._
+
 val inf = encode(Stream.from(0) map (_.toByte))
 inf take 10 map (_.toChar) toList       // List(0, 0, 0, 1, 0, 2, 0, 3, 0, 4)
 ```
