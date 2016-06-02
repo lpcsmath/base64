@@ -78,7 +78,12 @@ inf take 10 map (_.toChar) toList               // List(0, 0, 0, 1, 0, 2, 0, 3, 
 
 ### Exceptions
 
-The decoding operations perform several checks to validate the given data.
+The decoding operations perform several checks to validate the given data. The
+decoding operations only allow CR, LF and '%' as additional bytes in the encoded
+byte collection. The percent sign is allowed, because the byte collection will
+be validated before the percent decoding. CR and LF are allowed because of
+the MIME standard.
+
 The following code examples show the effect of decoding invalid data.
 
 ```
