@@ -19,7 +19,7 @@ See also the comments in file Codec.scala for details.
 To encode a traversable collection of bytes one uses the encode method of the
 object Base64.
 
-```
+```scala
 import de.csmath.codec.Base64._  
 
 encode(List[Byte](1,2,3,4))         // Stream(65,?)  
@@ -30,7 +30,7 @@ encodeToString(List[Byte](1,2,3,4)) // "AQIDBA=="
 The encoding can be controlled by providing the needed codec. The following
 examples show the difference between Base64 and Base64Url.
 
-```
+```scala
 import de.csmath.codec.Base64._  
 import de.csmath.codec.Codec._
 
@@ -41,7 +41,7 @@ encodeToString(List[Byte](-1,-17),BASE64URL) // "_-8%3D"
 To decode a given Base64 encoded collection of bytes one uses the decode method
 of the object Base64.
 
-```
+```scala
 import de.csmath.codec.Base64._  
 import de.csmath.codec.Codec._
 
@@ -55,7 +55,7 @@ decode("AQIDBA",BASE64NOPAD,4) map (_.toList)  // Success(List(1,2,3,4))
 The following examples show the difference between Base32 and Base32Hex.
 One can observe Base32 as being the default (if a byte collection is provided).
 
-```
+```scala
 import de.csmath.codec.Base32._
 import de.csmath.codec.Codec._
 
@@ -69,7 +69,7 @@ There is only one way to encode to Base16, because it uses already file system
 and URL save symbols and does not need to be padded. The following example
 shows the encoding of an non terminating stream.
 
-```
+```scala
 import de.csmath.codec.Base16._
 
 val inf = encode(Stream.from(0) map (_.toByte))
@@ -86,7 +86,7 @@ because of the line limitation of the MIME standard.
 
 The following code examples show the effect of decoding invalid data.
 
-```
+```scala
 import de.csmath.codec.Base64._
 
 decode("Z".getBytes)        // Failure(de.csmath.codec.RejectException: invalid length)
