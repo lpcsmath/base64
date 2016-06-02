@@ -2,7 +2,7 @@
 
 ### Implementation of RFC 4648 in Scala.
 
-This Package provides operations to encode arbitrary collections of bytes to a
+This library provides operations to encode arbitrary collections of bytes to a
 Base64, Base32 or Base16 code (respectively decode from it). Base on RFC 4648
 the following codes are distinguished:
 
