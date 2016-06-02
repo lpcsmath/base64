@@ -25,7 +25,7 @@ trait StreamDecoder extends StreamCodec {
             if (pred(data.head))
                 checkedByteStream(pred,data.tail) map ( s => data.head #:: s )
             else
-                Failure( new IllegalArgumentException("Data contains illegal bytes."))
+                Failure( new RejectException("data contains illegal bytes"))
 
 
     /**

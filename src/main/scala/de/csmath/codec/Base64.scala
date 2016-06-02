@@ -102,7 +102,7 @@ object Base64 extends BaseN {
         case BASE64          => base64Enc
         case BASE64NOPAD     => base64Enc
         case BASE64URL       => base64UrlEnc
-        case BASE64URLNOPAD  => base64UrlEnc
+        case BASE64URLNOPAD  => base64FileEnc
         case BASE64FILE      => base64FileEnc
         case BASE64FILENOPAD => base64FileEnc
     }
@@ -117,7 +117,7 @@ object Base64 extends BaseN {
         case BASE64          => base64Dec
         case BASE64NOPAD     => base64Dec
         case BASE64URL       => base64UrlDec
-        case BASE64URLNOPAD  => base64UrlDec
+        case BASE64URLNOPAD  => base64FileDec
         case BASE64FILE      => base64FileDec
         case BASE64FILENOPAD => base64FileDec
     }

@@ -128,6 +128,8 @@ object Base32 extends BaseN {
         case BASE32URL       => base32UrlDec
         case BASE32HEX       => base32HexDec
         case BASE32HEXURL    => base32HexUrlDec
+        case BASE32NOPAD     => base32Dec
+        case BASE32HEXNOPAD  => base32HexDec
     }
 
 }

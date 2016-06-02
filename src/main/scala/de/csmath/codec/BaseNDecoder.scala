@@ -163,11 +163,11 @@ abstract class BaseNDecoder extends StreamDecoder {
         val (num,x) = data
         val len = x.length
         if (!checkLength(num,len, size))
-            return (false,Failure(new IllegalArgumentException("Length Error")))
+            return (false,Failure(new RejectException("invalid length")))
         val (numNonPads,flag,intOk) = checkIntPadding(len,x)
         if (!intOk)
-            return (false,Failure(new IllegalArgumentException("Padding Error")))
-        val last = flag || (size > 0) && (num.toLong * groupSize + len == size)
+            return (false,Failure(new RejectException("wrong placed pad symbols")))
+        val last = flag || (size > 0) && (num >= size - groupSize)
 
         val res = bitdec(x.padTo(groupSize, pad.toByte))
         val numBytes = if (numNonPads < len) numNonPads else len
@@ -265,7 +265,7 @@ abstract class BaseNDecoder extends StreamDecoder {
             case (_,Failure(x)) =>
                 Failure(x)
             case x =>
-                Failure(new IllegalArgumentException("Data contains illegal bytes."))
+                Failure(new RejectException("pad symbols at illegal positions"))
         }
 
 }

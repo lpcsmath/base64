@@ -37,6 +37,11 @@ object Base16 extends BaseN {
      */
     lazy val base16Enc = new Base16Encoder()
 
+    /**
+     *  An instance of a <em>Base16Decoder</em>.
+     */
+    lazy val base16Dec = new Base16Decoder()
+
 
     /**
      *  Chooses the appropriate encoder instance according to the given codec.
@@ -53,11 +58,6 @@ object Base16 extends BaseN {
      *  @param enc The Codec.
      *  @return    An decoder instance.
      */
-    def decoder(enc: Codec.Value) = ???
-
-    // enc match {
-    //     case BASE16          => base16Dec
-    // }
-
+    def decoder(enc: Codec.Value) = base16Dec
 
 }

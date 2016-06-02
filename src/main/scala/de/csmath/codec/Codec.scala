@@ -6,11 +6,76 @@ package de.csmath.codec
  */
 object Codec extends Enumeration {
 
-    val BASE64, BASE64NOPAD, BASE64URL, BASE64URLNOPAD,
-        BASE64FILE, BASE64FILENOPAD,
-        BASE32, BASE32NOPAD, BASE32URL, BASE32URLNOPAD,
-        BASE32HEX, BASE32HEXNOPAD, BASE32HEXURL,
-        BASE16 = Value
+    /**
+     *  The standard Base64 encoding with padding.
+     */
+    val BASE64 = Value
+
+    /**
+     *  The standard Base64 encoding without padding.
+     */
+    val BASE64NOPAD = Value
+
+    /**
+     *  The file system and URL save Base64 encoding
+     *  with padding where the symbols '/' and '+'
+     *  are replaced by '_' and '-'.
+     */
+    val BASE64FILE = Value
+
+    /**
+     *  Like [[BASE64FILE]], but without padding.
+     */
+    val BASE64FILENOPAD = Value
+
+    /**
+     *  Like [[BASE64FILE]], but with percent encoding
+     *  of the pad symbols.
+     */
+    val BASE64URL = Value
+
+    /**
+     *  Like [[BASE64FILENOPAD]].
+     */
+    val BASE64URLNOPAD = Value
+
+    /**
+     *  The standard Base32 encoding with padding.
+     */
+    val BASE32 = Value
+
+    /**
+     *  The standard Base32 encoding without padding.
+     */
+    val BASE32NOPAD = Value
+
+    /**
+     *  Like [[BASE32]], but with percent encoding
+     *  of the pad symbols.
+     */
+    val BASE32URL = Value
+
+    /**
+     *  The Base32 encoding derived by extending the
+     *  hexadecimal number representation with padding.
+     */
+    val BASE32HEX = Value
+
+    /**
+     * Like [[BASE32HEX]], but without padding.
+     */
+    val BASE32HEXNOPAD = Value
+
+    /**
+     *  Like [[BASE32HEX]], but with percent encoding
+     *  of the pad symbols.
+     */
+    val BASE32HEXURL = Value
+
+    /**
+     *  The standard Base16 encoding.
+     */
+    val BASE16 = Value
 
 
     /**
