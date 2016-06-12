@@ -1,13 +1,13 @@
-New log file opened at Thu Jun 02 11:49:34 CEST 2016 by 12343@Lothars-MBP.fritz.box
-Taking next connection to: 64101
-New client attempting to connect on port: 64102-64101
-  Address = /192.168.178.30:64101
-This client on port 64102 has uuid fec10474-d976-4cae-8f15-30ef8a6c96eb configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-fec10474-d976-4cae-8f15-30ef8a6c96eb
-Taking next connection to: 64101
-New client attempting to connect on port: 64103-64101
-  Address = /192.168.178.30:64101
-Handshake exception on socket: 64103
+New log file opened at Fri Jun 10 20:06:05 CEST 2016 by 26177@Lothars-MBP.fritz.box
+Taking next connection to: 56088
+New client attempting to connect on port: 56089-56088
+  Address = /192.168.178.30:56088
+This client on port 56089 has uuid 0befbb44-8632-458d-bf83-bd2b57e8c1b2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0befbb44-8632-458d-bf83-bd2b57e8c1b2
+Taking next connection to: 56088
+New client attempting to connect on port: 56090-56088
+  Address = /192.168.178.30:56088
+Handshake exception on socket: 56090
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,9 +17,15 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 64101
-New client attempting to connect on port: 64104-64101
-  Address = /192.168.178.30:64101
-This client on port 64104 has uuid 9fa24f46-8456-4b2b-afc8-a16f61785513 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-fec10474-d976-4cae-8f15-30ef8a6c96eb, activator-9fa24f46-8456-4b2b-afc8-a16f61785513
-Taking next connection to: 64101
+Taking next connection to: 56088
+New client attempting to connect on port: 56091-56088
+  Address = /192.168.178.30:56088
+This client on port 56091 has uuid e752377b-d8e2-4d95-b035-9197c1a6e6a7 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0befbb44-8632-458d-bf83-bd2b57e8c1b2, activator-e752377b-d8e2-4d95-b035-9197c1a6e6a7
+Taking next connection to: 56088
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 26177@Lothars-MBP.fritz.box logs at Fri Jun 10 20:09:05 CEST 2016, goodbye.

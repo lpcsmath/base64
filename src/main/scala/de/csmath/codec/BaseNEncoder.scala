@@ -27,7 +27,7 @@ abstract class BaseNEncoder extends StreamEncoder with CanonicalPadding {
     def encode(data: Traversable[Byte], enc: Codec.Value) = {
         val groups = filledStream(groupSize,groupStream(groupSize,intStream(data)))
         val charStream = groups map ( encodeGroup(_,Codec.needPads(enc)) )
-        flatten(charStream) map (_.toByte)
+        charStream.flatten map (_.toByte)
     }
 
 

@@ -49,15 +49,4 @@ trait StreamCodec {
     protected def filledStream(groupSize: Int, s:Stream[Seq[Int]]): Stream[(Int,Seq[Int])] =
         s map ( seq => (groupSize - seq.length, seq padTo (groupSize,0)))
 
-
-    /**
-     *  Small helper method to flatten a stream of traversable collections of
-     *  type <em>Byte</em>.
-     *  @param s The stream of traversable collections.
-     *  @return  A flattened <em>Stream</em> of type <em>Byte</em>.
-     */
-    protected def flatten(s:Stream[Traversable[Byte]]): Stream[Byte] = {
-        s map (byteStream) flatten
-    }
-
 }

@@ -45,15 +45,15 @@ abstract class BaseNDecoder extends StreamDecoder {
 
         val size = Math.ceil(plainSize * 8 / codeBitlen).toLong
         val groups = checkedByteStream(allowedByte, data) map
-                     (invertBytes(_)) map
+                     (invertBytes) map
                      (filteredStream(crlfByte, _)) map
                      (groupStream(groupSize,_))
 
         val decGroups = groups map { s =>
             countedGroups(s) map (decodeGroup(_,size))
-        } flatMap (checkPrePadding(_))
+        } flatMap (checkPrePadding)
 
-        decGroups map (flatten(_))
+        decGroups map (_.flatten)
     }
 
 

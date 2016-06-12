@@ -43,18 +43,4 @@ class StreamCodecSpec extends FlatSpec with Matchers {
       sc.f.tail.tail should === (Stream.empty)
   }
 
-  "StreamCodec" should "flatten a filledStream" in {
-      val list = List[Byte](1,2,3)
-      val sc = new StreamCodec() {
-          val s = byteStream(list)
-          val g = groupStream(2,s)
-          val f = flatten(g)
-      }
-
-      sc.f.head should === (1)
-      sc.f.tail.head should === (2)
-      sc.f.tail.tail.head should === (3)
-      sc.f.tail.tail.tail should === (Stream.empty)
-  }
-
 }
